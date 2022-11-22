@@ -1,0 +1,46 @@
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 120px 103px;
+  width: 100%;
+}
+
+.promo__wrap {
+  max-width: 50%;
+  height: 100%;
+  margin-left: auto;
+}
+
+.promo__order {
+  max-width: 50%;
+  padding-right: 85px;
+}
+
+.promo__video {
+  margin-top: -63px;
+}
+
+.promo__title {
+  margin-bottom: 25px;
+}
+
+.promo__subtitle {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $color-sapphire;
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.promo__description {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-sapphire;
+}

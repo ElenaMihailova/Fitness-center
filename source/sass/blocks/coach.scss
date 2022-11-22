@@ -1,0 +1,36 @@
+.coach {
+  padding: 0 47px 91px;
+}
+
+.coach__title {
+  margin-bottom: 48px;
+}
+
+.coach__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.coach__item {
+  flex: 0 0 294px;
+  position: relative;
+}
+
+.coach__item h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $color-default-white;
+  margin: 0;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}

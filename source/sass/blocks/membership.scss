@@ -1,0 +1,31 @@
+.membership {
+  background-color: $color-ghostWhite;
+  padding: 120px 103px;
+}
+
+.membership__title {
+  text-align: center;
+}
+
+.membership__list,
+.membership__sublist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.membership__item h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: $color-sapphire;
+}
+
+.membership__sublist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
