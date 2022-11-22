@@ -36,7 +36,7 @@
 
   <main class="main">
     <div class="main__container">
-      <section class="promo">
+      <section class="promo" id="promo">
         <h2 class="promo__title">Тренажерный зал</h2>
         <p class="promo__subtitle">Просторный зал площадью 900 кв/м</p>
         <p class="promo__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
@@ -50,69 +50,72 @@
         </div>
       </section>
 
-      <section class="membership">
+      <section class="membership" id="membership">
         <h2 class="membership__title">Абонементы</h2>
         <ul class="membership__list">
-          <li class="membership__item membership__item--current">1 месяц
+          <li class="membership__item membership__item--current">
+            <h3>1 месяц</h3>
             <ul class="membership__sublist">
               <li class="membership__card card">
-                <h3>С тренером</h3>
+                <h4>С тренером</h4>
                 <p>12 занятий</p>
                 <p class="card__price">5000</p>
                 <a href="#">купить абонемент</a>
               </li>
               <li class="membership__card card">
-                <h3>Дневной</h3>
+                <h4>Дневной</h4>
                 <p>с 8:00 до 17:00 </p>
                 <p class="card__price">1700</p>
                 <a href="#">купить абонемент</a>
               </li>
               <li class="membership__card card">
-                <h3>Полный день</h3>
+                <h4>Полный день</h4>
                 <p>с 8:00 до 22:00 </p>
                 <p class="card__price">2700</p>
                 <a href="#">купить абонемент</a>
               </li>
             </ul>
           </li>
-          <li class="membership__item">6 месяцев
+          <li class="membership__item">
+            <h3>6 месяцев</h3>
             <ul class="membership__sublist">
-              <li class="membership__card card">6 месяцев
-                <h3>С тренером</h3>
+              <li class="membership__card card">
+                <h4>С тренером</h4>
                 <p>12 занятий в месяц</p>
-                <p class="card__price">25 000</p>
+                <p class="card__price">25000</p>
                 <a href="#">купить абонемент</a>
               </li>
               <li class="membership__card card">
-                <h3>Дневной</h3>
+                <h4>Дневной</h4>
                 <p>с 8:00 до 17:00 </p>
-                <p class="card__price">8 000</p>
+                <p class="card__price">8000</p>
                 <a href="#">купить абонемент</a>
               </li>
               <li class="membership__card card">
-                <h3>Полный день</h3>
+                <h4>Полный день</h4>
                 <p>с 8:00 до 22:00 </p>
-                <p class="card__price">11 000</p>
+                <p class="card__price">11000</p>
                 <a href="#">купить абонемент</a>
               </li>
             </ul>
           </li>
-          <li class="membership__item">12 месяцев
+          <li class="membership__item">
+            <h3>12 месяцев</h3>
             <ul class="membership__sublist">
               <li class="membership__card card">
-                <h3>С тренером</h3>
+                <h4>С тренером</h4>
                 <p>12 занятий в месяц</p>
                 <p class="card__price">40 000</p>
                 <a href="#">купить абонемент</a>
               </li>
               <li class="membership__card card">
-                <h3>Дневной</h3>
+                <h4>Дневной</h4>
                 <p>с 8:00 до 17:00 </p>
                 <p class="card__price">12 000</p>
                 <a href="#">купить абонемент</a>
               </li>
               <li class="membership__card card">
-                <h3>Полный день</h3>
+                <h4>Полный день</h4>
                 <p>с 8:00 до 22:00 </p>
                 <p class="card__price">20 000</p>
                 <a href="#">купить абонемент</a>
@@ -137,7 +140,7 @@
           alt="Мужчина, делающий отжимания c  неверной постановкой кистей" src="../img/advertisement-desktop.png">
       </section>
 
-      <section class="coach">
+      <section class="coach" id="coach">
         <h2 class="coach__title">Тренеры</h2>
         <ul class="coach__list">
           <li class="coach__item card">
@@ -208,7 +211,7 @@
         </ul>
       </section>
 
-      <section class="action">
+      <section class="action" id="action">
         <h2 class="action__title">Акции</h2>
         <ul class="action__list">
           <li class="action__item action__item--popular">
@@ -224,17 +227,136 @@
           </li>
           <li class="action__item">
             <h3>Скидка 20%</h3>
-            <p>Корпоративный фитнес  с командой</p>
+            <p>Корпоративный фитнес с командой</p>
             <a href="#">подробнее</a>
           </li>
         </ul>
       </section>
 
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__pagination pagination">
+          <button class="pagination__btn"><span class="visually-hidden">Предыдущий</span></button>
+          <button class="pagination__btn pagination__btn--next"><span class="visually-hidden">Следующий</span></button>
+        </div>
+        <div class="reviews__container">
+          <div class="reviews__slide slide">
+            <h3>Анна Орлова</h3>
+            <img alt="Анна Орлова" width="80" height="80" src="./img/avatar.png">
+            <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+              обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+            </p>
+          </div>
+          <div class="reviews__slide slide">
+            <h3>Ачарья Чарака</h3>
+            <img alt="Ачарья Чарака" width="80" height="80" src="./img/avatar3.png">
+            <p>Физическое упражнение, или вьяяма, это усилие, которое мы&nbsp;совершаем, приводящее к&nbsp;состоянию
+              стабильности и&nbsp;ощущению силы в&nbsp;теле.</p>
+          </div>
+          <div class="reviews__slide slide">
+            <h3>Илья Машков</h3>
+            <img alt="Илья Машков" width="80" height="80" src="./img/avatar2.png">
+            <p>Лыжероллеры&nbsp;&mdash; это такой вид спорта, на&nbsp;который все-таки немногие решаются,
+              нужны в&nbsp;особенности лыжникам для подготовки к&nbsp;сезону. Из&nbsp;обязательной
+              экипировки&nbsp;&mdash; шлем, некоторые вдобавок к&nbsp;нему надевают наколенники и&nbsp;налокотники.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="main__order">
+        <section class="lesson">
+          <form class="lesson__form">
+            <h2>Бесплатное занятие </h2>
+            <fieldset>
+              <label class="visually-hidden">Имя</label>
+              <input type="text" placeholder="Имя" required>
+            </fieldset>
+            <fieldset>
+              <label class="visually-hidden">Телефон</label>
+              <input type="tel" placeholder="Телефон" required>
+            </fieldset>
+            <button type="submit">отправить</button>
+          </form>
+        </section>
+
+        <section class="contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3>Адрес:</h3>
+              <a href="#">г. Омск, ул. 60 лет Октября, 7</a>
+            </li>
+            <li class="contacts__item" id="schedule">
+              <h3>График работы:</h3>
+              <p>Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li class="contacts__item">
+              <h3>Телефон:</h3>
+              <a href="tel:+88005555555">8-800-555-55-55</a>
+            </li>
+            <li class="contacts__item">
+              <h3>Email:</h3>
+              <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
   </main>
 
-  <footer>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo logo">
+        <p class="logo__text">SUPERGYM</p>
+      </div>
 
+      <nav class="footer__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#promo">Услуги</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#membership">Абонементы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#action">Акции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#coach">Тренеры</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#schedule">Расписание</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/valsoteam" title="Наш Вконтакте">
+            <svg width="13" height="8" viewBox="0 0 13 8">
+              <use xlink:href="./img/sprite/sprite.svg#vk"></use>
+            </svg>
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--ok" href="https://ok.ru" title="Наш Одноклассники">
+            <svg width="10" height="17" viewBox="0 0 10 17">
+              <use xlink:href="./img/sprite/sprite.svg#ok"></use>
+            </svg>
+            <span class="visually-hidden">Одноклассники</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--reddit" href="https://www.reddit.com" title="Наш Reddit">
+            <svg width="15" height="15" viewBox="0 0 15 15">
+              <use xlink:href="./img/sprite/sprite.svg#reddit"></use>
+            </svg>
+            <span class="visually-hidden">Реддит</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
 
   <script src="js/vendor.min.js"></script>
