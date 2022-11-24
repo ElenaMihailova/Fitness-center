@@ -1,0 +1,21 @@
+.navigation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
+
+.navigation__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+}

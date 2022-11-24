@@ -1,5 +1,11 @@
 .coach {
-  padding: 0 47px 91px;
+  padding: 0 30px 91px;
+}
+
+.coach__wrapper {
+  margin: 0 auto;
+  max-width: 1160px;
+  position: relative;
 }
 
 .coach__title {
@@ -12,15 +18,20 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
+  justify-content: space-between;
   padding-left: 56px;
   padding-right: 56px;
+  width: 100%;
 }
 
 .coach__item {
-  flex: 0 0 294px;
+  flex: 0 0 20%;
   position: relative;
+  aspect-ratio: 260/294;
+}
+
+.coach__item--nodisplay {
+  display: none;
 }
 
 .coach__item h3 {
@@ -33,4 +44,13 @@
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.coach__pagination {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }

@@ -1,5 +1,24 @@
 .advantages {
   background-color: $color-ghostWhite;
+  padding-top: 146px;
+  padding-bottom: 91px;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
+
+.advantages__wrapper {
+  margin: 0 auto;
+  text-align: center;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
 }
 
 .advantages__item h3 {
@@ -8,12 +27,28 @@
   font-size: 22px;
   line-height: 1.5;
   color: $color-sapphire;
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
 }
 
 .advantages__list {
-  margin: 0;
+  margin: 0 auto;
+  margin-top: 51px;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 1040px;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
 }
 
 .advantages__item p {
@@ -23,4 +58,121 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 1.4;
+  color: $color-sapphire;
+  grid-column: 2/3;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
+
+.advantages__number:not(.advantages__number--major) p {
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 1.5;
+  background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
+
+.advantages__number:not(.advantages__number--major) span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $color-persianBlue;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
+
+.advantages__number {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
+
+.advantages__title {
+  margin-bottom: 55px;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
+
+.advantages__item--major {
+  grid-column: 2/3;
+  grid-row: 1/-1;
+  align-self: center;
+  background-color: $color-resolutionBlue;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 66px;
+  padding-bottom: 66px;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
+
+.advantages__item--major p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-default-white;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
+
+.advantages__number--major p {
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 1.5;
+  color: $color-default-white;
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
+
+.advantages__number--major span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  color: $color-default-white;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
 }

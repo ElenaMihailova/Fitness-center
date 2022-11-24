@@ -1,5 +1,13 @@
 .advertisement {
-  padding: 120px 103px 106px;
+  padding-top: 120px;
+  padding-bottom: 106px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.advertisement__wrapper {
+  margin: 0 auto;
+  max-width: 1160px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

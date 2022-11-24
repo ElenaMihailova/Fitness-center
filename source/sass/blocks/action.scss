@@ -1,0 +1,111 @@
+.action {
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-top: 149px;
+  padding-bottom: 117px;
+}
+
+.action__title {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.action__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.action__item:not(.action__item--popular) h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: $color-resolutionBlue;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.action__item:not(.action__item--popular) {
+  border: 7px solid transparent;
+  border-image: linear-gradient(#d10a42, #00359f);
+  border-image-slice: 1;
+  padding: 35px;
+  padding-bottom: 40px;
+}
+
+.action__item:not(.action__item--popular) p {
+  font-weight: 400;
+  font-size: 16px;
+  color: $color-resolutionBlue;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.action__item:not(.action__item--popular) a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-resolutionBlue;
+  border-bottom: 1px solid $color-resolutionBlue;
+}
+
+.action__item--popular {
+  grid-row: 1/-1;
+  grid-column: 1/2;
+  display: flex;
+}
+
+.action__item--popular h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 156%;
+  color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+}
+
+.action__item--popular span {
+  font-weight: 700;
+  font-size: 70px;
+  color: $color-default-white;
+  line-height: 156%;
+}
+
+.action__item--popular p {
+  font-weight: 400;
+  font-size: 18px;
+  color: $color-default-white;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 198px;
+}
+
+.action__item--popular a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  border-bottom: 1px solid $color-default-white;
+}
+
+.action__item-text {
+  background-color: $color-torchRed;
+  padding: 45px;
+}
+
+.action__item-wrap img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.action__item-wrap {
+  flex-shrink: 0;
+  flex-grow: 0;
+}

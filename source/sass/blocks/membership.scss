@@ -1,10 +1,33 @@
 .membership {
   background-color: $color-ghostWhite;
-  padding: 120px 103px;
+  padding: 120px 40px;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
+
+.membership__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
 }
 
 .membership__title {
   text-align: center;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
 }
 
 .membership__list,
@@ -21,11 +44,40 @@
   font-size: 20px;
   line-height: 1.5;
   color: $color-sapphire;
+  text-align: center;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
 }
 
 .membership__sublist {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
+
+.membership__item--no {
+  display: none;
+}
+
+.membership__card {
+  flex: 0 0 30%;
+  aspect-ratio: 360/448;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
 }

@@ -1,0 +1,47 @@
+.footer {
+  background-color: $color-blackRussian;
+  padding-top: 44px;
+  padding-bottom: 32px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 53px;
+    padding-bottom: 52px;
+  }
+}
+
+.footer__container {
+  margin: 0 auto;
+  max-width: 1150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.footer__logo .logo__text {
+  color: $color-default-white;
+}
+
+.footer__social {
+  margin-left: auto;
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
+}
