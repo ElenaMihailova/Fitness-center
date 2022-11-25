@@ -2,6 +2,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
 }
 
 .video__content {
@@ -9,6 +15,13 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .video__content::before {
@@ -21,4 +34,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 4;
+
+  @include vp-1199 {
+  }
+
+  @include vp-767 {
+  }
 }

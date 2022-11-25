@@ -409,6 +409,14 @@ template {
 }
 
 @font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Alumni Sans";
   src: url("../fonts/AlumniSans-SemiBold.woff2") format("woff2"), url("../fonts/AlumniSans-SemiBold.woff") format("woff");
   font-style: normal;
@@ -866,33 +874,28 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .about__img-wrapper {
-  margin-left: auto;
   max-width: 500px;
   height: auto;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.about__description {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
-}
-
 .about__list {
   list-style: none;
   margin: 0;
   padding: 0;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .about__button {
@@ -915,6 +918,7 @@ button,
   color: #ffffff;
   padding: 24px 57px;
   border: 4px solid #ffffff;
+  margin-top: 80px;
 }
 
 .about__img {
@@ -922,6 +926,16 @@ button,
   height: auto;
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+.about__order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  gap: 10px;
 }
 
 .promo {
@@ -974,6 +988,10 @@ button,
   font-size: 16px;
   line-height: 1.5;
   color: #102654;
+}
+
+.promo__img {
+  width: 100%;
 }
 
 .video {
@@ -1036,6 +1054,7 @@ button,
   line-height: 1.5;
   color: #102654;
   text-align: center;
+  margin: 0;
 }
 
 .membership__sublist {
@@ -1059,11 +1078,10 @@ button,
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30%;
   flex: 0 0 30%;
-  aspect-ratio: 360/448;
 }
 
 .card {
-  padding: 68px 77px;
+  padding: 68px 10px;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1137,7 +1155,7 @@ button,
   text-transform: uppercase;
   color: #102654;
   border: 2px solid #102654;
-  width: 100%;
+  width: 70%;
   text-align: center;
 }
 
@@ -1216,6 +1234,10 @@ button,
 
 .advertisement__img {
   height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  aspect-ratio: 660/500;
 }
 
 .advertisement__link {
@@ -1234,6 +1256,7 @@ button,
   font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
+  margin: 0;
 }
 
 .advertisement__date {
@@ -1244,17 +1267,13 @@ button,
 }
 
 .coach {
-  padding: 0 30px 91px;
+  padding: 30px 30px 91px;
 }
 
 .coach__wrapper {
   margin: 0 auto;
   max-width: 1160px;
   position: relative;
-}
-
-.coach__title {
-  margin-bottom: 48px;
 }
 
 .coach__list {
@@ -1271,6 +1290,7 @@ button,
   justify-content: space-between;
   padding-left: 56px;
   padding-right: 56px;
+  padding-top: 48px;
   width: 100%;
 }
 
@@ -1408,6 +1428,7 @@ button,
   padding-right: 34px;
   padding-top: 66px;
   padding-bottom: 66px;
+  width: 100%;
 }
 
 .advantages__item--major p {
@@ -2013,6 +2034,10 @@ button,
     padding-right: 45px;
   }
 
+  .header__order {
+    padding-bottom: 25px;
+  }
+
   .logo__text {
     font-size: 24px;
     line-height: 29px;
@@ -2024,7 +2049,21 @@ button,
   }
 
   .about {
-    padding-right: 40px;
+    padding-right: 0;
+    gap: 30px;
+  }
+
+  .about__city {
+    font-size: 34px;
+    line-height: 41px;
+    text-align: right;
+  }
+
+  .about__title {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 86px;
+    text-align: right;
   }
 
   .about__img-wrapper {
@@ -2032,9 +2071,256 @@ button,
     height: auto;
   }
 
+  .about__list {
+    text-align: right;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-right: -30px;
+  }
+
+  .about__button {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-top: 60px;
+    margin-left: auto;
+  }
+
+  .promo {
+    padding: 100px 45px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .promo__wrap {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .promo__order {
+    width: 100%;
+    max-width: none;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .promo__description--detail {
+    display: none;
+  }
+
+  .promo__video {
+    margin-top: 0;
+  }
+
+  .promo__subtitle {
+    margin-bottom: 50px;
+  }
+
+  .promo__description {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-right: 0;
+  }
+
+  .promo__img {
+    aspect-ratio: 678/345;
+  }
+
+  .membership {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .membership__item h3 {
+    font-size: 18px;
+  }
+
+  .membership__sublist {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .advertisement {
+    padding: 100px 45px;
+    padding-bottom: 70px;
+  }
+
+  .advertisement__order {
+    padding: 50px 45px;
+    width: 50%;
+  }
+
+  .advertisement__title {
+    font-size: 48px;
+    line-height: 96%;
+  }
+
+  .advertisement__img-wrap {
+    width: 50%;
+  }
+
+  .advertisement__img {
+    aspect-ratio: 386/292;
+  }
+
+  .advertisement__link {
+    padding: 16px;
+    width: 100%;
+  }
+
+  .advertisement__text {
+    font-size: 12px;
+  }
+
+  .advertisement__date {
+    font-size: 12px;
+  }
+
+  .coach {
+    padding-bottom: 100px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .coach__title {
+    text-align: center;
+  }
+
+  .coach__list {
+    padding-top: 31px;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .coach__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+    aspect-ratio: 268/294;
+  }
+
+  .coach__item--nodisplaytablet {
+    display: none;
+  }
+
+  .advantages {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .advantages__item h3 {
+    font-size: 20px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto)[3];
+    grid-template-rows: repeat(3, auto);
+    gap: 0;
+  }
+
+  .advantages__item--major {
+    grid-column: 1/-1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    width: 60%;
+    -ms-grid-column-align: center;
+    justify-self: center;
+    padding: 45px;
+  }
+
   .title {
     font-size: 42px;
     line-height: 50px;
+  }
+
+  .action {
+    padding: 100px 45px;
+  }
+
+  .action__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .action__item:not(.action__item--popular) {
+    max-width: 47%;
+  }
+
+  .action__item:not(.action__item--popular) p {
+    margin-bottom: 57px;
+  }
+
+  .action__item--popular {
+    width: 100%;
+  }
+
+  .action__item-wrap img {
+    width: 100%;
+  }
+
+  .action__item-wrap {
+    min-width: 399px;
+    aspect-ratio: 399/462;
+  }
+
+  .main__order {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .lesson__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .lesson__form h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .contacts {
+    padding-top: 70px;
+  }
+
+  .navigation__list {
+    gap: 30px;
   }
 }
 
@@ -2055,7 +2341,8 @@ button,
   .header {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 10px;
+    padding-top: 16px;
+    padding-bottom: 80px;
   }
 
   .logo__text {
@@ -2069,18 +2356,13 @@ button,
   }
 
   .about {
-    padding-right: 0;
+    padding-top: 43px;
   }
 
   .about__city {
     font-size: 28px;
     line-height: 34px;
-    text-align: left;
-  }
-
-  .about__title {
-    font-size: 72px;
-    line-height: 86px;
+    padding-right: 3px;
   }
 
   .about__img-wrapper {
@@ -2088,24 +2370,198 @@ button,
   }
 
   .about__button {
-    padding: 25px;
+    padding: 20px;
     width: 100%;
-    grid-column: 1/-1;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-top: 22px;
+  }
+
+  .about__order {
+    padding-top: 14px;
   }
 
   .promo {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
+    padding-top: 63px;
+    gap: 33px;
+  }
+
+  .promo__order {
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 40px;
-    padding-top: 70px;
+  }
+
+  .promo__title {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .promo__subtitle {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .promo__description {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  .promo__img {
+    aspect-ratio: 320/313;
+  }
+
+  .video__content {
+    width: 100%;
+  }
+
+  .membership__item h3 {
+    font-size: 16px;
+  }
+
+  .membership__card {
+    width: 100%;
+  }
+
+  .card {
+    padding: 55px 10px;
+  }
+
+  .card__price {
+    font-size: 48px;
+  }
+
+  .card__price-shadow {
+    font-size: 80px;
+  }
+
+  .advertisement {
+    padding: 70px 15px;
+  }
+
+  .advertisement__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .advertisement__order {
+    width: 100%;
+  }
+
+  .advertisement__img-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .advertisement__img {
+    aspect-ratio: 290/292;
+  }
+
+  .coach {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .coach__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    aspect-ratio: 226/274;
+  }
+
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .advantages__item--major {
+    width: 100%;
+    padding: 50px;
   }
 
   .title {
     font-size: 32px;
     line-height: 38px;
+  }
+
+  .action__item--popular {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .action__item-wrap {
+    min-width: auto;
+    aspect-ratio: 290/299;
+  }
+
+  .lesson {
+    width: 100%;
+    padding: 70px 15px;
+  }
+
+  .lesson__form {
+    width: auto;
+    min-width: none;
+  }
+
+  .lesson__form h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .lesson__form div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contacts__wrapper {
+    margin: 0;
+  }
+
+  .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    gap: 35px;
+  }
+
+  .contacts__list::before {
+    display: none;
+  }
+
+  .contacts__item:nth-child(even) {
+    padding-left: 0;
+  }
+
+  .contacts__item:nth-child(odd) {
+    padding-right: 0;
   }
 
   .footer {

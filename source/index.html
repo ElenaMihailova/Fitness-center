@@ -31,18 +31,30 @@
         <div class="header__about about">
           <div class="about__description">
             <p class="about__city">омск</p>
-            <h1 class="about__title">Фитнес центр</h1>
-            <ul class="about__list">
-              <li class="about__item">Тренажёрный зал</li>
-              <li class="about__item">Групповые занятия</li>
-              <li class="about__item">Кардио-зона </li>
-            </ul>
+            <div class="about__order">
+              <h1 class="about__title">Фитнес центр</h1>
+              <ul class="about__list">
+                <li class="about__item">Тренажёрный зал</li>
+                <li class="about__item">Групповые занятия</li>
+                <li class="about__item">Кардио-зона </li>
+              </ul>
+            </div>
             <a class="about__button" href="#">Купить абонемент</a>
           </div>
 
           <div class="about__img-wrapper">
-            <img class="about__img" alt="Мужчина в футболке с логотипом Супермен" width="500" height="556"
-              src="../img/about-desktop.png">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="
+                    img/about-desktop.webp   1x,
+                    img/about-desktop@2.webp 2x
+                        " />
+              <source type="image/webp" media="(min-width: 768px)" srcset="
+                        img/about-tablet.webp  1x,
+                        img/about-tablet@2.webp 2x
+                      " />
+              <img class="about__img" alt="Мужчина в футболке с логотипом Супермен" width="500" height="556"
+                src="img/about-desktop.png" srcset="img/about-desktop@2.png 2x">
+            </picture>
           </div>
         </div>
       </div>
@@ -63,7 +75,18 @@
               групповых занятий. </p>
           </div>
           <div class="promo__wrap">
-            <img class="promo__img" alt="Зал с тренажерами" width="660" height="401" src="../img/promo-desktop.png">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="
+                    img/promo-desktop.webp   1x,
+                    img/promo-desktop@2.webp 2x
+                        " />
+              <source type="image/webp" media="(min-width: 768px)" srcset="
+                        img/promo-tablet.webp  1x,
+                        img/promo-tablet@2.webp 2x
+                      " />
+              <img class="promo__img" alt="Зал с тренажерами" width="660" height="401" src="img/promo-desktop.png"
+                srcset="img/promo-desktop@2.png 2x">
+            </picture>
           </div>
           <div class="promo__video video">
             <video class="video__content"></video>
@@ -190,8 +213,18 @@
               <a class="advertisement__link" href="#">заполнить заявку</a>
             </div>
             <div class="advertisement__img-wrap">
-              <img class="advertisement__img" width="660" height="500"
-                alt="Мужчина, делающий отжимания c  неверной постановкой кистей" src="../img/advertisement-desktop.png">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                      img/advertisement-desktop.webp   1x,
+                      img/advertisement-desktop@2.webp 2x
+                          " />
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                          img/advertisement-tablet.webp  1x,
+                          img/advertisement-tablet@2.webp 2x
+                        " />
+                <img class="advertisement__img" width="660" height="500" alt="Мужчина и пудра"
+                  src="img/advertisement-desktop.png" srcset="../img/advertisement-desktop@2.png 2x">
+              </picture>
             </div>
           </div>
         </section>
@@ -201,35 +234,35 @@
             <h2 class="coach__title title">Тренеры</h2>
             <ul class="coach__list">
               <li class="coach__item person coach__item--aktive">
-                <img src="./img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
+                <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
                 <h3>Анна Павлова</h3>
               </li>
               <li class="coach__item person coach__item--aktive">
-                <img src="./img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
+                <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
                 <h3>Алексей Лавров</h3>
               </li>
-              <li class="coach__item person coach__item--aktive">
-                <img src="./img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
+              <li class="coach__item person coach__item--aktive coach__item--nodisplaytablet">
+                <img src="img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
                 <h3>Александр Пашков</h3>
               </li>
-              <li class="coach__item person coach__item--aktive">
-                <img src="./img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
+              <li class="coach__item person coach__item--aktive coach__item--nodisplaytablet">
+                <img src="img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
                 <h3>Мария Кетова</h3>
               </li>
               <li class="coach__item person coach__item--nodisplay">
-                <img src="./img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
+                <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
                 <h3>Анна Павлова</h3>
               </li>
               <li class="coach__item person coach__item--nodisplay">
-                <img src="./img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
+                <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
                 <h3>Алексей Лавров</h3>
               </li>
               <li class="coach__item person coach__item--nodisplay">
-                <img src="./img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
+                <img src="img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
                 <h3>Александр Пашков</h3>
               </li>
               <li class="coach__item person coach__item--nodisplay">
-                <img src="./img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
+                <img src="img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
                 <h3>Мария Кетова</h3>
               </li>
             </ul>
@@ -261,6 +294,13 @@
                   <span>мест</span>
                 </div>
               </li>
+              <li class="advantages__item advantages__item--major">
+                <div class="advantages__number advantages__number--major">
+                  <p>100</p>
+                  <span>Тренажеров</span>
+                </div>
+                <p>Современные тренажеры на все группы мышц</p>
+              </li>
               <li class="advantages__item">
                 <h3>Собственная парковка</h3>
                 <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
@@ -277,13 +317,6 @@
                   <span>лет</span>
                 </div>
               </li>
-              <li class="advantages__item advantages__item--major">
-                <div class="advantages__number advantages__number--major">
-                  <p>100</p>
-                  <span>Тренажеров</span>
-                </div>
-                <p>Современные тренажеры на все группы мышц</p>
-              </li>
             </ul>
           </div>
         </section>
@@ -298,7 +331,18 @@
                 <a href="#">подробнее</a>
               </div>
               <div class="action__item-wrap">
-                <img width="280" height="462" alt="Девушка в спортивной форме" src="./img/action-desktop.png">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="
+                        img/action-desktop.webp   1x,
+                        img/action-desktop@2.webp 2x
+                            " />
+                  <source type="image/webp" media="(min-width: 768px)" srcset="
+                            img/action-tablet.webp  1x,
+                            img/action-tablet@2.webp 2x
+                          " />
+                    <img width="280" height="462" alt="Девушка в спортивной форме" src="img/action-desktop.png" srcset="img/action-desktop@2.png 2x">
+                </picture>
+
               </div>
             </li>
             <li class="action__item">
@@ -324,21 +368,21 @@
           <div class="reviews__container swiper-wrapper">
             <div class="reviews__slide slide swiper-slide">
               <h3>Анна Орлова</h3>
-              <img alt="Анна Орлова" width="80" height="80" src="./img/avatar.png">
+              <img alt="Анна Орлова" width="80" height="80" src="./img/avatar.webp">
               <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
                 обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
               </p>
             </div>
             <div class="reviews__slide slide  slide--no swiper-slide">
               <h3>Ачарья Чарака</h3>
-              <img alt="Ачарья Чарака" width="80" height="80" src="./img/avatar3.png">
+              <img alt="Ачарья Чарака" width="80" height="80" src="./img/avatar3.webp">
               <p>&laquo;Физическое упражнение, или вьяяма, это усилие, которое мы&nbsp;совершаем, приводящее
                 к&nbsp;состоянию
                 стабильности и&nbsp;ощущению силы в&nbsp;теле&raquo;</p>
             </div>
             <div class="reviews__slide slide slide--no swiper-slide">
               <h3>Илья Машков</h3>
-              <img alt="Илья Машков" width="80" height="80" src="./img/avatar2.png">
+              <img alt="Илья Машков" width="80" height="80" src="img/avatar2.webp">
               <p>&laquo;Лыжероллеры&nbsp;&mdash; это такой вид спорта, на&nbsp;который все-таки немногие решаются,
                 нужны в&nbsp;особенности лыжникам для подготовки к&nbsp;сезону. Из&nbsp;обязательной
                 экипировки&nbsp;&mdash; шлем, некоторые вдобавок к&nbsp;нему надевают наколенники
@@ -368,7 +412,7 @@
 
           <section class="contacts">
             <div class="contacts__wrapper">
-              <h2 class="contacts__title">Контакты</h2>
+              <h2 class="contacts__title title">Контакты</h2>
               <ul class="contacts__list">
                 <li class="contacts__item">
                   <h3>Адрес:</h3>
