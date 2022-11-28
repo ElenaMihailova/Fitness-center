@@ -73,9 +73,9 @@
   }
 }
 
-.coach__item--nodisplay {
-  display: none;
-}
+// .coach__item--nodisplay {
+//   display: none;
+// }
 
 .coach__item h3 {
   font-weight: 700;
@@ -110,14 +110,14 @@
   }
 }
 
-.coach__item--nodisplaytablet {
-  @include vp-1199 {
-    display: none;
-  }
-}
+// .coach__item--nodisplaytablet {
+//   @include vp-1199 {
+//     display: none;
+//   }
+// }
 
-.coach__item--nodisplaymobile {
-  @include vp-767 {
-    display: none;
-  }
-}
+// .coach__item--nodisplaymobile {
+//   @include vp-767 {
+//     display: none;
+//   }
+// }

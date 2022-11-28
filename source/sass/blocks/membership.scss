@@ -1,6 +1,13 @@
 .membership {
   background-color: $color-ghostWhite;
-  padding: 120px 40px;
+  padding: 75px 45px;
+  padding-top: 120px;
+  padding-left: 41px;
+  padding-bottom: 118px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @include vp-1199 {
     padding-top: 100px;
@@ -11,25 +18,24 @@
     padding-top: 63px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 66px;
+    padding-bottom: 69px;
   }
 }
 
-.membership__wrapper {
+.membership__container {
   max-width: 1160px;
-  margin: 0 auto;
-
-  @include vp-1199 {
-  }
-
-  @include vp-767 {
-  }
+  width: 100%;
 }
 
 .membership__title {
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 18px;
+  margin-right: 0;
 
   @include vp-1199 {
+    margin-right: 9px;
+    margin-bottom: 20px;
   }
 
   @include vp-767 {
@@ -53,56 +59,51 @@
   }
 }
 
-.membership__item h3 {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-  color: $color-sapphire;
-  text-align: center;
-  margin: 0;
-
-  @include vp-1199 {
-    font-size: 18px;
-  }
-
-  @include vp-767 {
-    font-size: 16px;
-  }
-}
-
 .membership__sublist {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   gap: 10px;
+  display: none;
+
+  &--active {
+    display: flex;
+  }
 
   @include vp-1199 {
     flex-direction: column;
     align-items: center;
-    gap: 48px;
+    gap: 37px;
   }
 
   @include vp-767 {
     margin-top: 49px;
-    gap: 26px;
+    gap: 37px;
   }
 }
 
-.membership__item--no {
-  display: none;
-}
-
 .membership__card {
-  flex: 0 0 30%;
+  flex: 0 0 31%;
 
   @include vp-1199 {
-    width: 69.2%;
+    width: 65%;
   }
 
   @include vp-767 {
     width: 100%;
   }
 }
+
+.membership__tabs {
+  width: 100%;
+}
+
+// .membership::after {
+//   content: "";
+//   width: 244px;
+//   height: 330px;
+//   background-image: url("../img/member-bg.png");
+//   background-repeat: no-repeat;
+//   background-position: bottom right;
+//   background-size: cover;
+// }

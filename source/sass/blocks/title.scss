@@ -6,6 +6,11 @@
   letter-spacing: 0.03em;
   color: $color-sapphire;
 
+  &--big {
+    font-size: 54px;
+    line-height: 65px;
+  }
+
   @include vp-1199 {
     font-size: 42px;
     line-height: 50px;

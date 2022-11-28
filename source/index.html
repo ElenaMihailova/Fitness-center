@@ -102,106 +102,104 @@
         </section>
 
         <section class="membership" id="membership">
-          <div class="membership__wrapper">
-            <h2 class="membership__title title">Абонементы</h2>
-            <ul class="membership__list">
-              <li class="membership__item membership__item--current">
-                <h3>1 месяц</h3>
-                <ul class="membership__sublist">
-                  <li class="membership__card card">
-                    <h4>С тренером</h4>
-                    <span>12 занятий</span>
-                    <div>
-                      <p class="card__price-shadow">5000</p>
-                      <p class="card__price">5000 <span>i</span></p>
-                    </div>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                  <li class="membership__card card">
-                    <h4>Дневной</h4>
-                    <span>с 8:00 до 17:00 </span>
-                    <div>
-                      <p class="card__price-shadow">1700</p>
-                      <p class="card__price">1700 <span>i</span></p>
-                    </div>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                  <li class="membership__card card">
-                    <h4>Полный день</h4>
-                    <span>с 8:00 до 22:00 </span>
-                    <div>
-                      <p class="card__price-shadow">2700</p>
-                      <p class="card__price">2700 <span>i</span></p>
-                    </div>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="membership__item membership__item--no">
-                <h3>6 месяцев</h3>
-                <ul class="membership__sublist">
-                  <li class="membership__card card">
-                    <h4>С тренером</h4>
-                    <span>12 занятий в месяц</span>
-                    <div>
-                      <p class="card__price-shadow">25000</p>
-                      <p class="card__price">25000 <span>i</span></p>
-                    </div>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                  <li class="membership__card card">
-                    <h4>Дневной</h4>
-                    <span>с 8:00 до 17:00 </span>
-                    <div>
-                      <p class="card__price-shadow">8000</p>
-                      <p class="card__price">8000 <span>i</span></p>
-                    </div>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                  <li class="membership__card card">
-                    <h4>Полный день</h4>
-                    <span>с 8:00 до 22:00 </span>
-                    <div>
-                      <p class="card__price-shadow">11000</p>
-                      <p class="card__price">11000 <span>i</span></p>
-                    </div>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="membership__item membership__item--no">
-                <h3>12 месяцев</h3>
-                <ul class="membership__sublist">
-                  <li class="membership__card card">
-                    <h4>С тренером</h4>
-                    <span>12 занятий в месяц</span>
-                    <div>
-                      <p class="card__price-shadow">40 000</p>
-                      <p class="card__price">40 000 <span>i</span></p>
-                    </div>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                  <li class="membership__card card">
-                    <h4>Дневной</h4>
-                    <span>с 8:00 до 17:00 </span>
-                    <div>
-                      <p class="card__price-shadow">12 000</p>
-                      <p class="card__price">12 000 <span>i</span></p>
-                    </div>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                  <li class="membership__card card">
-                    <h4>Полный день</h4>
-                    <span>с 8:00 до 22:00 </span>
-                    <div>
-                      <p class="card__price-shadow">20 000</p>
-                      <p class="card__price">20 000 <span>i</span></p>
-                    </div>
-                    <a href="#">купить абонемент</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+          <div class="membership__container">
+            <h2 class="membership__title title title--big">Абонементы</h2>
+            <div class="membership__tabs tabs">
+              <ul class="tabs__list">
+                <li class="tabs__item tabs__item--active" tabindex="0"><a>1 месяц</a></li>
+                <li class="tabs__item" tabindex="0"><a>6 месяцев</a></li>
+                <li class="tabs__item" tabindex="0"><a>12 месяцев</a></li>
+              </ul>
+            </div>
+            <div class="membership__wrapper">
+              <ul class="membership__sublist membership__sublist--active">
+                <li class="membership__card card">
+                  <h4>С тренером</h4>
+                  <span>12 занятий</span>
+                  <div>
+                    <p class="card__price-shadow">5000</p>
+                    <p class="card__price">5000 <span>i</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+                <li class="membership__card card card--active">
+                  <h4>Дневной</h4>
+                  <span>с 8:00 до 17:00 </span>
+                  <div>
+                    <p class="card__price-shadow">1700</p>
+                    <p class="card__price">1700 <span>i</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+                <li class="membership__card card">
+                  <h4>Полный день</h4>
+                  <span>с 8:00 до 22:00 </span>
+                  <div>
+                    <p class="card__price-shadow">2700</p>
+                    <p class="card__price">2700 <span>i</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+              </ul>
+              <ul class="membership__sublist">
+                <li class="membership__card card">
+                  <h4>С тренером</h4>
+                  <span>12 занятий в месяц</span>
+                  <div>
+                    <p class="card__price-shadow">25000</p>
+                    <p class="card__price">25000 <span>i</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+                <li class="membership__card card">
+                  <h4>Дневной</h4>
+                  <span>с 8:00 до 17:00 </span>
+                  <div>
+                    <p class="card__price-shadow">8000</p>
+                    <p class="card__price">8000 <span>i</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+                <li class="membership__card card">
+                  <h4>Полный день</h4>
+                  <span>с 8:00 до 22:00 </span>
+                  <div>
+                    <p class="card__price-shadow">11000</p>
+                    <p class="card__price">11000 <span>i</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+              </ul>
+              <ul class="membership__sublist">
+                <li class="membership__card card">
+                  <h4>С тренером</h4>
+                  <span>12 занятий в месяц</span>
+                  <div>
+                    <p class="card__price-shadow">40 000</p>
+                    <p class="card__price">40 000 <span>i</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+                <li class="membership__card card">
+                  <h4>Дневной</h4>
+                  <span>с 8:00 до 17:00 </span>
+                  <div>
+                    <p class="card__price-shadow">12 000</p>
+                    <p class="card__price">12 000 <span>i</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+                <li class="membership__card card">
+                  <h4>Полный день</h4>
+                  <span>с 8:00 до 22:00 </span>
+                  <div>
+                    <p class="card__price-shadow">20 000</p>
+                    <p class="card__price">20 000 <span>i</span></p>
+                  </div>
+                  <a href="#">купить абонемент</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -212,7 +210,7 @@
               <p class="advertisement__text">Ежегодные соревнования по CrossFit</p>
               <div class="advertisement__date">
                 <p class="advertisement__date-name">Дата</p>
-                <p class="advertisement__date-number"><span class="advertisement__date-time">7</span> <span>Марта
+                <p><span class="advertisement__date-time">7</span> <span class="advertisement__date-number">Марта
                     <span>2019</span></span></p>
               </div>
               <div class="advertisement__date">
@@ -231,53 +229,57 @@
                           img/advertisement-tablet.webp  1x,
                           img/advertisement-tablet@2.webp 2x
                         " />
+                <source type="image/webp" media="(min-width: 320px)" srcset="
+                          img/advertisement-mobile.webp  1x,
+                          img/advertisement-mobile@2.webp 2x
+                        " />
                 <img class="advertisement__img" width="660" height="500" alt="Мужчина и пудра"
-                  src="img/advertisement-desktop.png" srcset="../img/advertisement-desktop@2.png 2x">
+                  src="img/advertisement-desktop.png" srcset="img/advertisement-desktop@2.png 2x">
               </picture>
             </div>
           </div>
         </section>
 
-        <section class="coach" id="coach">
+        <section class="coach swiper-coaches" id="coach">
           <div class="coach__wrapper">
             <h2 class="coach__title title">Тренеры</h2>
-            <ul class="coach__list">
-              <li class="coach__item person coach__item--aktive">
+            <ul class="coach__list swiper-wrapper">
+              <li class="coach__item person coach__item--aktive swiper-slide">
                 <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
                 <h3>Анна Павлова</h3>
               </li>
-              <li class="coach__item person coach__item--aktive coach__item--nodisplaymobile">
+              <li class="coach__item person coach__item--aktive coach__item--nodisplaymobile swiper-slide">
                 <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
                 <h3>Алексей Лавров</h3>
               </li>
-              <li class="coach__item person coach__item--aktive coach__item--nodisplaytablet">
+              <li class="coach__item person coach__item--aktive coach__item--nodisplaytablet swiper-slide">
                 <img src="img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
                 <h3>Александр Пашков</h3>
               </li>
-              <li class="coach__item person coach__item--aktive coach__item--nodisplaytablet">
+              <li class="coach__item person coach__item--aktive coach__item--nodisplaytablet swiper-slide">
                 <img src="img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
                 <h3>Мария Кетова</h3>
               </li>
-              <li class="coach__item person coach__item--nodisplay">
+              <li class="coach__item person coach__item--nodisplay swiper-slide">
                 <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
                 <h3>Анна Павлова</h3>
               </li>
-              <li class="coach__item person coach__item--nodisplay">
+              <li class="coach__item person coach__item--nodisplay swiper-slide">
                 <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
                 <h3>Алексей Лавров</h3>
               </li>
-              <li class="coach__item person coach__item--nodisplay">
+              <li class="coach__item person coach__item--nodisplay swiper-slide">
                 <img src="img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
                 <h3>Александр Пашков</h3>
               </li>
-              <li class="coach__item person coach__item--nodisplay">
+              <li class="coach__item person coach__item--nodisplay swiper-slide">
                 <img src="img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
                 <h3>Мария Кетова</h3>
               </li>
             </ul>
             <div class="coach__pagination pagination">
-              <button class="pagination__btn"><span class="visually-hidden">Предыдущий</span></button>
-              <button class="pagination__btn pagination__btn--next"><span
+              <button class="pagination__btn slider__button-next--coaches"><span class="visually-hidden">Предыдущий</span></button>
+              <button class="pagination__btn pagination__btn--next slider__button-prev--coaches"><span
                   class="visually-hidden">Следующий</span></button>
             </div>
           </div>
@@ -376,11 +378,11 @@
           </ul>
         </section>
 
-        <section class="reviews swiper">
+        <section class="reviews swiper-feedback">
           <h2 class="reviews__title title">Отзывы</h2>
           <div class="reviews__pagination pagination">
-            <button class="pagination__btn swiper-button-prev"><span class="visually-hidden">Предыдущий</span></button>
-            <button class="pagination__btn pagination__btn--next swiper-button-next"><span
+            <button class="pagination__btn slider__button-prev--feedback"><span class="visually-hidden">Предыдущий</span></button>
+            <button class="pagination__btn pagination__btn--next slider__button-next--feedback"><span
                 class="visually-hidden">Следующий</span></button>
           </div>
           <div class="reviews__container swiper-wrapper">
@@ -391,14 +393,14 @@
                 обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
               </p>
             </div>
-            <div class="reviews__slide slide  slide--no swiper-slide">
+            <div class="reviews__slide slide  swiper-slide">
               <h3>Ачарья Чарака</h3>
               <img alt="Ачарья Чарака" width="80" height="80" src="./img/avatar3.webp">
               <p>&laquo;Физическое упражнение, или вьяяма, это усилие, которое мы&nbsp;совершаем, приводящее
                 к&nbsp;состоянию
                 стабильности и&nbsp;ощущению силы в&nbsp;теле&raquo;</p>
             </div>
-            <div class="reviews__slide slide slide--no swiper-slide">
+            <div class="reviews__slide slide swiper-slide">
               <h3>Илья Машков</h3>
               <img alt="Илья Машков" width="80" height="80" src="img/avatar2.webp">
               <p>&laquo;Лыжероллеры&nbsp;&mdash; это такой вид спорта, на&nbsp;который все-таки немногие решаются,
@@ -460,6 +462,7 @@
         <div class="footer__logo logo">
           <svg class="logo__img" width="119" height="23" viewBox="0 0 119 23">
             <use xlink:href="./img/sprite/sprite.svg#logo"></use>
+          </svg>
         </div>
 
         <nav class="footer__navigation navigation">
