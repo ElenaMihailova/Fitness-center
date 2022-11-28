@@ -32,6 +32,10 @@
 .advertisement__order {
   background-color: $color-torchRed;
   padding: 85px 78px;
+  flex: 0 0 50%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, auto);
 
   @include vp-1199 {
     padding: 50px 45px;
@@ -40,6 +44,7 @@
 
   @include vp-767 {
     width: 100%;
+    padding: 50px 44px;
   }
 }
 
@@ -52,6 +57,7 @@
   letter-spacing: 0.03em;
   color: $color-default-white;
   margin: 0;
+  grid-row: 1/3;
 
   @include vp-1199 {
     font-size: 48px;
@@ -99,6 +105,9 @@
   color: $color-default-white;
   padding: 29px 114px;
   border: 4px solid $color-default-white;
+  grid-row: 4/5;
+  grid-column: 1/-1;
+  text-align: center;
 
   @include vp-1199 {
     padding: 16px;
@@ -115,6 +124,8 @@
   line-height: 1.5;
   color: $color-default-white;
   margin: 0;
+  grid-column: 1/-1;
+  grid-row: 3/4;
 
   @include vp-1199 {
     font-size: 12px;
@@ -129,6 +140,8 @@
   font-size: 18px;
   line-height: 1.5;
   color: $color-default-white;
+  display: flex;
+  flex-direction: column;
 
   @include vp-1199 {
     font-size: 12px;
@@ -136,4 +149,34 @@
 
   @include vp-767 {
   }
+}
+
+.advertisement__date-name {
+  margin: 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.advertisement__date-time {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  display: flex;
+
+  @include vp-1199 {
+    font-size: 24px;
+  }
+
+  @include vp-767 {
+  }
+}
+
+.advertisement__date-number {
+  margin: 0;
+  display: flex;
+  gap: 3px;
+}
+
+.advertisement__date-number span {
+  display: flex;
+  flex-direction: column;
 }

@@ -114,7 +114,10 @@
   @include vp-1199 {
     display: none;
   }
+}
 
+.coach__item--nodisplaymobile {
   @include vp-767 {
+    display: none;
   }
 }

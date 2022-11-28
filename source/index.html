@@ -22,7 +22,9 @@
       <div class="header__container">
         <div class="header__order">
           <div class="header__logo logo">
-            <p class="logo__text">SUPERGYM</p>
+            <svg class="logo__img" width="119" height="23" viewBox="0 0 119 23">
+              <use xlink:href="./img/sprite/sprite.svg#logo"></use>
+            </svg>
           </div>
           <div class="header__phone phone">
             <a class="phone__link" href="tel:+88005555555">8-800-555-55-55</a>
@@ -32,7 +34,7 @@
           <div class="about__description">
             <p class="about__city">омск</p>
             <div class="about__order">
-              <h1 class="about__title">Фитнес центр</h1>
+              <h1 class="about__title"><span class="visually-hidden">Фитнес центр</span></h1>
               <ul class="about__list">
                 <li class="about__item">Тренажёрный зал</li>
                 <li class="about__item">Групповые занятия</li>
@@ -63,33 +65,39 @@
     <main class="main">
       <div class="main__container">
         <section class="promo" id="promo">
-          <div class="promo__order">
-            <h2 class="promo__title title">Тренажерный зал</h2>
-            <p class="promo__subtitle">Просторный зал площадью 900 кв/м</p>
-            <p class="promo__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для
-              укрепления
-              тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-            </p>
-            <p class="promo__description promo__description--detail">В зале расположены отдельная зона для Crossfit и
-              кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов
-              групповых занятий. </p>
-          </div>
-          <div class="promo__wrap">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="
-                    img/promo-desktop.webp   1x,
-                    img/promo-desktop@2.webp 2x
+          <div class="promo__container">
+            <div class="promo__order">
+              <h2 class="promo__title title">Тренажерный зал</h2>
+              <p class="promo__subtitle">Просторный зал площадью 900 кв/м</p>
+              <p class="promo__description">Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом
+                и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым
+                современным оборудованием для всех спортсменов.
+              </p>
+              <p class="promo__description promo__description--detail">В&nbsp;зале расположены отдельная зона для
+                Crossfit и&nbsp;кардио-зона с&nbsp;40 тренажерами. Также в&nbsp;фитнес центре есть несколько
+                оборудованных залов для различных видов групповых занятий.</p>
+            </div>
+            <div class="promo__wrap">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                      img/promo-desktop.webp   1x,
+                      img/promo-desktop@2.webp 2x
+                          " />
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                          img/promo-tablet.webp  1x,
+                          img/promo-tablet@2.webp 2x
                         " />
-              <source type="image/webp" media="(min-width: 768px)" srcset="
-                        img/promo-tablet.webp  1x,
-                        img/promo-tablet@2.webp 2x
-                      " />
-              <img class="promo__img" alt="Зал с тренажерами" width="660" height="401" src="img/promo-desktop.png"
-                srcset="img/promo-desktop@2.png 2x">
-            </picture>
-          </div>
-          <div class="promo__video video">
-            <video class="video__content"></video>
+                <source type="image/webp" media="(min-width: 320px)" srcset="
+                          img/promo-mobile.webp  1x,
+                          img/promo-mobile@2.webp 2x
+                        " />
+                <img class="promo__img" alt="Зал с тренажерами" width="660" height="401" src="img/promo-desktop.png"
+                  srcset="img/promo-desktop@2.png 2x">
+              </picture>
+            </div>
+            <div class="promo__video video">
+              <video class="video__content"></video>
+            </div>
           </div>
         </section>
 
@@ -203,12 +211,13 @@
               <h2 class="advertisement__title">SUPER GAMES</h2>
               <p class="advertisement__text">Ежегодные соревнования по CrossFit</p>
               <div class="advertisement__date">
-                <p>Дата</p>
-                <p>7 марта 2019</p>
+                <p class="advertisement__date-name">Дата</p>
+                <p class="advertisement__date-number"><span class="advertisement__date-time">7</span> <span>Марта
+                    <span>2019</span></span></p>
               </div>
               <div class="advertisement__date">
-                <p>Время</p>
-                <p>12:00</p>
+                <p class="advertisement__date-name">Время</p>
+                <span class="advertisement__date-time">12:00</span>
               </div>
               <a class="advertisement__link" href="#">заполнить заявку</a>
             </div>
@@ -237,7 +246,7 @@
                 <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
                 <h3>Анна Павлова</h3>
               </li>
-              <li class="coach__item person coach__item--aktive">
+              <li class="coach__item person coach__item--aktive coach__item--nodisplaymobile">
                 <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
                 <h3>Алексей Лавров</h3>
               </li>
@@ -279,19 +288,23 @@
             <h2 class="advantages__title title">Наши преимущества</h2>
             <ul class="advantages__list">
               <li class="advantages__item">
-                <h3>Площадь</h3>
-                <p>Занимайтесь без очередей и&nbsp;толпучки</p>
                 <div class="advantages__number">
                   <p>900</p>
                   <span>кв/м</span>
                 </div>
+                <div class="advantages__text">
+                  <h3>Площадь</h3>
+                  <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+                </div>
               </li>
               <li class="advantages__item">
-                <h3>Комфорт</h3>
-                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                 <div class="advantages__number">
                   <p>350</p>
                   <span>мест</span>
+                </div>
+                <div class="advantages__text">
+                  <h3>Комфорт</h3>
+                  <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                 </div>
               </li>
               <li class="advantages__item advantages__item--major">
@@ -302,19 +315,23 @@
                 <p>Современные тренажеры на все группы мышц</p>
               </li>
               <li class="advantages__item">
-                <h3>Собственная парковка</h3>
-                <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
                 <div class="advantages__number">
                   <p>70</p>
                   <span>машин</span>
                 </div>
+                <div class="advantages__text">
+                  <h3>Собственная парковка</h3>
+                  <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
+                </div>
               </li>
               <li class="advantages__item">
-                <h3>Тренерский опыт</h3>
-                <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
                 <div class="advantages__number">
                   <p>5+</p>
                   <span>лет</span>
+                </div>
+                <div class="advantages__text">
+                  <h3>Тренерский опыт</h3>
+                  <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
                 </div>
               </li>
             </ul>
@@ -340,7 +357,8 @@
                             img/action-tablet.webp  1x,
                             img/action-tablet@2.webp 2x
                           " />
-                    <img width="280" height="462" alt="Девушка в спортивной форме" src="img/action-desktop.png" srcset="img/action-desktop@2.png 2x">
+                  <img width="280" height="462" alt="Девушка в спортивной форме" src="img/action-desktop.png"
+                    srcset="img/action-desktop@2.png 2x">
                 </picture>
 
               </div>
@@ -440,7 +458,8 @@
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__logo logo">
-          <p class="logo__text">SUPERGYM</p>
+          <svg class="logo__img" width="119" height="23" viewBox="0 0 119 23">
+            <use xlink:href="./img/sprite/sprite.svg#logo"></use>
         </div>
 
         <nav class="footer__navigation navigation">
