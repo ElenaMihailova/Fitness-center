@@ -1708,6 +1708,12 @@ button,
   color: #ffffff;
 }
 
+.phone__link:hover,
+.phone__link:focus,
+.phone__link:active {
+  color: #103aae;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1814,6 +1820,19 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.about__button:hover,
+.about__button:focus {
+  border: 4px solid #f8f9fc;
+  background-color: #f8f9fc;
+  color: #103aae;
+}
+
+.about__button:active {
+  border: 4px solid #f8f9fc;
+  background-color: #f8f9fc;
+  color: #ed0233;
 }
 
 .about__img {
@@ -2204,6 +2223,19 @@ button,
   padding-bottom: 29px;
 }
 
+.advertisement__link:hover,
+.advertisement__link:focus {
+  border: 4px solid #f8f9fc;
+  background-color: #f8f9fc;
+  color: #103aae;
+}
+
+.advertisement__link:active {
+  border: 4px solid #f8f9fc;
+  background-color: #f8f9fc;
+  color: #ed0233;
+}
+
 .advertisement__text {
   font-weight: 400;
   font-size: 18px;
@@ -2548,6 +2580,13 @@ button,
   border-bottom: 1px solid #1c3374;
 }
 
+.action__item:not(.action__item--popular) a:hover,
+.action__item:not(.action__item--popular) a:focus,
+.action__item:not(.action__item--popular) a:active {
+  color: #ed0233;
+  border-bottom: 1px solid #ed0233;
+}
+
 .action__item--popular {
   grid-row: 1/-1;
   -ms-grid-column: 1;
@@ -2596,6 +2635,13 @@ button,
   text-transform: uppercase;
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
+}
+
+.action__item--popular a:hover,
+.action__item--popular a:focus,
+.action__item--popular a:active {
+  color: #103aae;
+  border-bottom: 1px solid #103aae;
 }
 
 .action__item-text {
@@ -2841,6 +2887,18 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.lesson__form button:hover,
+.lesson__form button:focus {
+  background-color: #f8f9fc;
+  color: #103aae;
+}
+
+.lesson__form button:active {
+  background-color: #f8f9fc;
+  color: #ed0233;
 }
 
 .contacts {
@@ -2920,6 +2978,12 @@ button,
   color: #102654;
 }
 
+.contacts__item a:hover,
+.contacts__item a:focus,
+.contacts__item a:active {
+  color: #ed0233;
+}
+
 .contacts__item p {
   margin: 0;
   font-weight: 400;
@@ -2976,6 +3040,12 @@ button,
   color: #ffffff;
 }
 
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link:active {
+  color: #103aae;
+}
+
 .social {
   list-style: none;
   padding: 0;
@@ -3005,6 +3075,24 @@ button,
 .social__link svg {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+}
+
+.social__link:hover svg {
+  fill: #f8f9fc;
+}
+
+.social__link:focus svg {
+  fill: #f8f9fc;
+}
+
+.social__link:active svg {
+  fill: #f8f9fc;
+}
+
+.social__link:hover,
+.social__link:focus,
+.social__link:active {
+  background-color: #103aae;
 }
 
 .tabs__list {
