@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <!-- <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="icon" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon"> -->
+  <title>Фитнес центр</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <main class="main">
+      <div class="main__container">
+
+        <!-- <section class="coach" id="coach">
+          <div class="coach__wrapper">
+            <h2 class="coach__title title">Тренеры</h2>
+            <ul class="coach__list">
+              <li class="coach__item person">
+                <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
+                <h3>Анна Павлова</h3>
+              </li>
+              <li class="coach__item person">
+                <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
+                <h3>Алексей Лавров</h3>
+              </li>
+              <li class="coach__item person">
+                <img src="img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
+                <h3>Александр Пашков</h3>
+              </li>
+              <li class="coach__item person">
+                <img src="img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
+                <h3>Мария Кетова</h3>
+              </li>
+              <li class="coach__item person">
+                <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
+                <h3>Анна Павлова</h3>
+              </li>
+              <li class="coach__item person">
+                <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
+                <h3>Алексей Лавров</h3>
+              </li>
+              <li class="coach__item person">
+                <img src="img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
+                <h3>Александр Пашков</h3>
+              </li>
+              <li class="coach__item person">
+                <img src="img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
+                <h3>Мария Кетова</h3>
+              </li>
+            </ul>
+            <div class="coach__pagination">
+              <button class="pagination__btn slider__button-next--coaches"><span
+                  class="visually-hidden">Предыдущий</span></button>
+              <button class="pagination__btn pagination__btn--next slider__button-prev--coaches"><span
+                  class="visually-hidden">Следующий</span></button>
+            </div>
+          </div>
+        </section> -->
+        <section class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h3>Анна Орлова</h3>
+              <img alt="Анна Орлова" width="80" height="80" src="./img/avatar.webp">
+              <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h3>Ачарья Чарака</h3>
+              <img alt="Ачарья Чарака" width="80" height="80" src="./img/avatar3.webp">
+              <p>&laquo;Физическое упражнение, или вьяяма, это усилие, которое мы&nbsp;совершаем, приводящее
+                к&nbsp;состоянию
+                стабильности и&nbsp;ощущению силы в&nbsp;теле&raquo;</p>
+            </div>
+            <div class="swiper-slide">
+              <h3>Илья Машков</h3>
+              <img alt="Илья Машков" width="80" height="80" src="img/avatar2.webp">
+              <p>&laquo;Лыжероллеры&nbsp;&mdash; это такой вид спорта, на&nbsp;который все-таки немногие решаются,
+                нужны в&nbsp;особенности лыжникам для подготовки к&nbsp;сезону. Из&nbsp;обязательной
+                экипировки&nbsp;&mdash; шлем, некоторые вдобавок к&nbsp;нему надевают наколенники
+                и&nbsp;налокотники&raquo;
+              </p>
+            </div>
+          </div>
+
+          <button class="swiper-button-prev"><span class="visually-hidden">Предыдущий</span></button>
+          <button class="swiper-button-next"><span class="visually-hidden">Следующий</span></button>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo logo">
+          <svg class="logo__img" width="119" height="23" viewBox="0 0 119 23">
+            <use xlink:href="./img/sprite/sprite.svg#logo"></use>
+          </svg>
+        </div>
+
+        <nav class="footer__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#promo">Услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#membership">Абонементы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#action">Акции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#coach">Тренеры</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#schedule">Расписание</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/valsoteam" title="Наш Вконтакте">
+              <svg width="13" height="8" viewBox="0 0 13 8">
+                <use xlink:href="./img/sprite/sprite.svg#vk"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--ok" href="https://ok.ru" title="Наш Одноклассники">
+              <svg width="10" height="17" viewBox="0 0 10 17">
+                <use xlink:href="./img/sprite/sprite.svg#ok"></use>
+              </svg>
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--reddit" href="https://www.reddit.com" title="Наш Reddit">
+              <svg width="15" height="15" viewBox="0 0 15 15">
+                <use xlink:href="./img/sprite/sprite.svg#reddit"></use>
+              </svg>
+              <span class="visually-hidden">Реддит</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!-- <script src="js/vendor.min.js"></script> -->
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

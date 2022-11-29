@@ -7,11 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
   <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <!-- <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="./img/favicon/favicon-32x32.png">
-  <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon"> -->
+  <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon">
   <title>Фитнес центр</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -233,53 +230,54 @@
                           img/adv-mobile.webp  1x,
                           img/adv-mobile@2.webp 2x
                         " />
-                <img class="advertisement__img" width="660" height="500" alt="Мужчина и пудра"
-                  src="img/adv-desktop.png" srcset="img/adv-desktop@2.png 2x">
+                <img class="advertisement__img" width="660" height="500" alt="Мужчина и пудра" src="img/adv-desktop.png"
+                  srcset="img/adv-desktop@2.png 2x">
               </picture>
             </div>
           </div>
         </section>
 
-        <section class="coach swiper-coaches" id="coach">
+        <section class="coach" id="coach">
           <div class="coach__wrapper">
             <h2 class="coach__title title">Тренеры</h2>
-            <ul class="coach__list swiper-wrapper">
-              <li class="coach__item person coach__item--aktive swiper-slide">
+            <ul class="coach__list">
+              <li class="coach__item person">
                 <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
                 <h3>Анна Павлова</h3>
               </li>
-              <li class="coach__item person coach__item--aktive coach__item--nodisplaymobile swiper-slide">
+              <li class="coach__item person">
                 <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
                 <h3>Алексей Лавров</h3>
               </li>
-              <li class="coach__item person coach__item--aktive coach__item--nodisplaytablet swiper-slide">
+              <li class="coach__item person">
                 <img src="img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
                 <h3>Александр Пашков</h3>
               </li>
-              <li class="coach__item person coach__item--aktive coach__item--nodisplaytablet swiper-slide">
+              <li class="coach__item person">
                 <img src="img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
                 <h3>Мария Кетова</h3>
               </li>
-              <li class="coach__item person coach__item--nodisplay swiper-slide">
+              <li class="coach__item person">
                 <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
                 <h3>Анна Павлова</h3>
               </li>
-              <li class="coach__item person coach__item--nodisplay swiper-slide">
+              <li class="coach__item person">
                 <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
                 <h3>Алексей Лавров</h3>
               </li>
-              <li class="coach__item person coach__item--nodisplay swiper-slide">
+              <li class="coach__item person">
                 <img src="img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
                 <h3>Александр Пашков</h3>
               </li>
-              <li class="coach__item person coach__item--nodisplay swiper-slide">
+              <li class="coach__item person">
                 <img src="img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
                 <h3>Мария Кетова</h3>
               </li>
             </ul>
             <div class="coach__pagination pagination">
-              <button class="pagination__btn slider__button-next--coaches"><span class="visually-hidden">Предыдущий</span></button>
-              <button class="pagination__btn pagination__btn--next slider__button-prev--coaches"><span
+              <button class="pagination__btn"><span
+                  class="visually-hidden">Предыдущий</span></button>
+              <button class="pagination__btn pagination__btn--next"><span
                   class="visually-hidden">Следующий</span></button>
             </div>
           </div>
@@ -362,7 +360,6 @@
                   <img width="280" height="462" alt="Девушка в спортивной форме" src="img/action-desktop.png"
                     srcset="img/action-desktop@2.png 2x">
                 </picture>
-
               </div>
             </li>
             <li class="action__item">
@@ -378,11 +375,12 @@
           </ul>
         </section>
 
-        <section class="reviews swiper-feedback">
+        <section class="reviews swiper-feedback swiper">
           <h2 class="reviews__title title">Отзывы</h2>
           <div class="reviews__pagination pagination">
-            <button class="pagination__btn slider__button-prev--feedback"><span class="visually-hidden">Предыдущий</span></button>
-            <button class="pagination__btn pagination__btn--next slider__button-next--feedback"><span
+            <button class="pagination__btn"><span
+                class="visually-hidden">Предыдущий</span></button>
+            <button class="pagination__btn pagination__btn--next"><span
                 class="visually-hidden">Следующий</span></button>
           </div>
           <div class="reviews__container swiper-wrapper">
@@ -456,7 +454,6 @@
         </div>
       </div>
     </main>
-
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__logo logo">
