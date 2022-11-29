@@ -115,6 +115,13 @@
   font-size: 14px;
   line-height: 21px;
   color: $color-sapphire;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-torchRed;
+  }
+
   @include vp-1199 {
   }
 
@@ -127,6 +134,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
   @include vp-1199 {
   }
 

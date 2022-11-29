@@ -17,3 +17,9 @@
     line-height: 24px;
   }
 }
+
+.phone__link:hover,
+.phone__link:focus,
+.phone__link:active {
+  color: $color-egyptianBlue;
+}

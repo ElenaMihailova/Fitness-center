@@ -1,7 +1,14 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {sliderCoaches, sliderFeedback} from './modules/slider';
 
+import Swiper from 'swiper';
+
+const swiper = new Swiper('.swiper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,8 +25,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    sliderCoaches();
-    sliderFeedback();
+    swiper();
+
+
+    // sliderCoaches();
+    // sliderFeedback();
   });
 });
 

@@ -20,3 +20,9 @@
   line-height: 16px;
   color: $color-default-white;
 }
+
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link:active {
+  color: $color-egyptianBlue;
+}

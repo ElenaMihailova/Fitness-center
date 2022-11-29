@@ -19,3 +19,21 @@
 .social__link svg {
   flex-shrink: 0;
 }
+
+.social__link:hover svg {
+  fill: $color-ghostWhite;
+}
+
+.social__link:focus svg {
+  fill: $color-ghostWhite;
+}
+
+.social__link:active svg {
+  fill: $color-ghostWhite;
+}
+
+.social__link:hover,
+.social__link:focus,
+.social__link:active {
+  background-color: $color-egyptianBlue;
+}

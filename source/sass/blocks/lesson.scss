@@ -115,6 +115,18 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-ghostWhite;
+    color: $color-egyptianBlue;
+  }
+
+  &:active {
+    background-color: $color-ghostWhite;
+    color: $color-torchRed;
+  }
 
   @include vp-1199 {
   }
