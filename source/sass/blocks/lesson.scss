@@ -2,32 +2,43 @@
   flex: 0 0 50%;
   background-color: #102654;
   padding-top: 56px;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
   padding-left: 30px;
   padding-right: 30px;
+  display: flex;
+  justify-content: end;
+  padding-right: 170px;
 
   @include vp-1199 {
+    padding-bottom: 70px;
+    padding-top: 62px;
+    padding-right: 63px;
+    justify-content: center;
   }
 
   @include vp-767 {
     width: 100%;
-    padding: 70px 15px;
+    padding: 65px 15px;
+    padding-bottom: 70px;
   }
 }
 
 .lesson__form {
-  width: 60%;
-  margin: 0 auto;
+  width: 77%;
   min-width: max-content;
+  max-width: 389px;
 
   @include vp-1199 {
     display: flex;
     flex-direction: column;
+    max-width: 472px;
+    width: 100%;
   }
 
   @include vp-767 {
-    width: auto;
-    min-width: none;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 290px;
   }
 }
 
@@ -39,26 +50,59 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   margin: 0;
+  margin-right: 21px;
+  max-width: 389px;
+  margin-bottom: 0px;
 
   @include vp-1199 {
     font-size: 42px;
     line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-right: 0;
   }
 
   @include vp-767 {
     font-size: 32px;
     line-height: 38px;
+    font-weight: 600;
+    margin-bottom: 0;
   }
 }
 
 .lesson__form fieldset {
   border: none;
   width: 50%;
+  padding-left: 0;
+  position: relative;
+  padding-top: 10px;
+  margin-left: 0;
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-bottom: 17px;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 12px;
+  }
+}
+
+.lesson__form fieldset::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
 
   @include vp-1199 {
+    bottom: 13px;
   }
 
   @include vp-767 {
+    bottom: 4px;
   }
 }
 
@@ -66,27 +110,36 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-bottom: 30px;
+  gap: 30px;
+  margin-bottom: 15px;
 
   @include vp-1199 {
+    gap: 60px;
+    margin-bottom: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   @include vp-767 {
     flex-direction: column;
+    padding-top: 18px;
+    padding-bottom: 7px;
+    gap: 0;
   }
 }
 
 .lesson__form input {
   border: none;
   background-color: inherit;
-  border-bottom: 1px solid #74819c;
   padding: 10px;
+  padding-left: 0;
 
-  @include vp-1199 {
-  }
-
-  @include vp-767 {
-  }
+  // &::hover,
+  // &::focus,
+  // &::active {
+  //   border: none;
+  //   outline: none;
+  // }
 }
 
 .lesson__form input::placeholder {
@@ -96,19 +149,13 @@
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-
-  @include vp-1199 {
-  }
-
-  @include vp-767 {
-  }
 }
 
 .lesson__form button {
   border: 3px solid #ffffff;
   background-color: inherit;
   width: 100%;
-  padding: 21px;
+  padding: 17px 21px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -129,8 +176,13 @@
   }
 
   @include vp-1199 {
+    padding-top: 17px;
+    padding-bottom: 16px;
   }
 
   @include vp-767 {
+    max-width: 290px;
+    padding-top: 16px;
+    padding-bottom: 15px;
   }
 }
