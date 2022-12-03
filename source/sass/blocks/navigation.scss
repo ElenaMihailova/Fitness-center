@@ -3,9 +3,12 @@
 
   @include vp-1199 {
     padding-left: 8px;
+    padding-bottom: 0;
   }
 
   @include vp-767 {
+    padding-left: 0;
+    padding-bottom: 33px;
   }
 }
 
@@ -22,6 +25,10 @@
   }
 
   @include vp-767 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 76px;
+    row-gap: 16px;
   }
 }
 
@@ -30,6 +37,11 @@
   font-size: 14px;
   line-height: 16px;
   color: $color-default-white;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .navigation__link:hover,
@@ -43,5 +55,49 @@
 
   @include vp-767 {
     display: block;
+  }
+}
+
+.navigation__item {
+  width: auto;
+
+  @include vp-767 {
+    width: 40%;
+  }
+}
+
+.navigation__item:nth-child(1) {
+  @include vp-767 {
+    order: -1;
+  }
+}
+
+.navigation__item:nth-child(2) {
+  @include vp-767 {
+    order: 3;
+  }
+}
+
+.navigation__item:nth-child(3) {
+  @include vp-767 {
+    order: 5;
+  }
+}
+
+.navigation__item:nth-child(4) {
+  @include vp-767 {
+    order: 2;
+  }
+}
+
+.navigation__item:nth-child(5) {
+  @include vp-767 {
+    order: 4;
+  }
+}
+
+.navigation__item:nth-child(6) {
+  @include vp-767 {
+    order: 6;
   }
 }

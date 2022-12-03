@@ -4,9 +4,10 @@
 }
 
 .logo--footer {
-  display: block;
-
   @include vp-767 {
-    display: none;
+    width: 68px;
+    height: auto;
+    display: flex;
+    margin-top: 6px;
   }
 }

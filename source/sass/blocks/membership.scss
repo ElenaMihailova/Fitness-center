@@ -27,6 +27,11 @@
   width: 100%;
 }
 
+.membership__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
 .membership__title {
   text-align: center;
   margin-top: 0;
@@ -98,12 +103,23 @@
   width: 100%;
 }
 
-// .membership::after {
-//   content: "";
-//   width: 244px;
-//   height: 330px;
-//   background-image: url("../img/member-bg.png");
-//   background-repeat: no-repeat;
-//   background-position: bottom right;
-//   background-size: cover;
-// }
+.membership__background {
+  background-color: inherit;
+  position: absolute;
+  bottom: -153px;
+  right: 0;
+
+  @include vp-1199 {
+    bottom: -127px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.membership__background img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
