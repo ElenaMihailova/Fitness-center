@@ -1,6 +1,6 @@
 .advertisement {
   padding-top: 120px;
-  padding-bottom: 106px;
+  padding-bottom: 77px;
   padding-left: 40px;
   padding-right: 40px;
 
@@ -11,6 +11,7 @@
 
   @include vp-767 {
     padding: 70px 15px;
+    padding-bottom: 34px;
   }
 }
 

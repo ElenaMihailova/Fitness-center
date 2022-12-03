@@ -1,1 +1,12 @@
+.logo__img {
+  width: 100%;
+  height: 100%;
+}
 
+.logo--footer {
+  display: block;
+
+  @include vp-767 {
+    display: none;
+  }
+}

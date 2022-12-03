@@ -1,3 +1,14 @@
+.navigation {
+  padding-left: 19px;
+
+  @include vp-1199 {
+    padding-left: 8px;
+  }
+
+  @include vp-767 {
+  }
+}
+
 .navigation__list {
   list-style: none;
   margin: 0;
@@ -25,4 +36,12 @@
 .navigation__link:focus,
 .navigation__link:active {
   color: $color-egyptianBlue;
+}
+
+.navigation__item--logo {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
 }

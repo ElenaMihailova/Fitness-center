@@ -239,46 +239,109 @@
 
         <section class="coach" id="coach">
           <div class="coach__wrapper swiper swiper-coaches">
-            <h2 class="coach__title title">Тренеры</h2>
-            <ul class="coach__list swiper-wrapper">
-              <li class="coach__item person swiper-slide">
+            <h2 class="coach__title title title--big">Тренеры</h2>
+            <ul class="swiper-wrapper">
+              <li class="coach__item swiper-slide" tabindex=0>
                 <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
                 <h3>Анна Павлова</h3>
+                <div class="coach__description">
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
               </li>
-              <li class="coach__item person swiper-slide">
+              <li class="coach__item swiper-slide" tabindex=0>
                 <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
                 <h3>Алексей Лавров</h3>
+                <div class="coach__description">
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
               </li>
-              <li class="coach__item person swiper-slide">
+              <li class="coach__item swiper-slide">
                 <img src="img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
                 <h3>Александр Пашков</h3>
+                <div class="coach__description">
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
               </li>
-              <li class="coach__item person swiper-slide">
+              <li class="coach__item swiper-slide">
                 <img src="img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
                 <h3>Мария Кетова</h3>
+                <div class="coach__description">
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
               </li>
-              <li class="coach__item person swiper-slide">
+              <li class="coach__item swiper-slide">
                 <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
                 <h3>Анна Павлова</h3>
+                <div class="coach__description">
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
               </li>
-              <li class="coach__item person swiper-slide">
+              <li class="coach__item swiper-slide">
                 <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
                 <h3>Алексей Лавров</h3>
+                <div class="coach__description">
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
               </li>
-              <li class="coach__item person swiper-slide">
+              <li class="coach__item swiper-slide">
                 <img src="img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
                 <h3>Александр Пашков</h3>
+                <div class="coach__description">
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
               </li>
-              <li class="coach__item person swiper-slide">
+              <li class="coach__item swiper-slide">
                 <img src="img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
                 <h3>Мария Кетова</h3>
+                <div class="coach__description">
+                  <p>CrossFit</p>
+                  <ul>
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
               </li>
             </ul>
-            <!-- <div class="coach__pagination pagination"> -->
-              <button class="pagination__btn swiper-button-prev slider__button-prev--coaches"><span class="visually-hidden">Предыдущий</span></button>
-              <button class="pagination__btn pagination__btn--next swiper-button-next slider__button-next--coaches"><span
-                  class="visually-hidden">Следующий</span></button>
-            <!-- </div> -->
+            <button class="btn-swiper btn-swiper--prev swiper-button-prev swiper__button-prev swiper__button-prev--coaches"
+              aria-label="Предыдущий слайд"></button>
+            <button class="btn-swiper swiper-button-next swiper__button-next swiper__button-next--coaches"
+              aria-label="Следующий слайд"></button>
           </div>
         </section>
 
@@ -390,8 +453,8 @@
                 </p>
               </div>
             </div>
-              <button class="reviews__button-prev reviews__button-prev--feedback"></button>
-              <button class="reviews__button-next reviews__button-next--feedback"></button>
+            <button class="reviews__button-prev reviews__button-prev--feedback"></button>
+            <button class="reviews__button-next reviews__button-next--feedback"></button>
           </div>
         </section>
 
@@ -446,9 +509,15 @@
             <use xlink:href="./img/sprite/sprite.svg#logo"></use>
           </svg>
         </div>
-
         <nav class="footer__navigation navigation">
           <ul class="navigation__list">
+            <li class="navigation__item navigation__item--logo">
+              <div class="logo logo--footer">
+                <svg class="logo__img" width="119" height="23" viewBox="0 0 119 23">
+                  <use xlink:href="./img/sprite/sprite.svg#logo"></use>
+                </svg>
+              </div>
+            </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#promo">Услуги</a>
             </li>

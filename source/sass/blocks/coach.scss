@@ -1,22 +1,24 @@
 .coach {
-  padding: 30px 30px 91px;
+  padding: 30px 30px 92px;
+  position: relative;
 
   @include vp-1199 {
-    padding-bottom: 100px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-bottom: 103px;
+    padding-left: 101px;
+    padding-right: 101px;
+    padding-top: 31px;
   }
 
   @include vp-767 {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-bottom: 70px;
   }
 }
 
 .coach__wrapper {
   margin: 0 auto;
   max-width: 1160px;
-  position: relative;
   @include vp-1199 {
   }
 
@@ -25,50 +27,35 @@
 }
 
 .coach__title {
+  margin: 0;
+  margin-left: 2px;
+  margin-bottom: 48px;
+
   @include vp-1199 {
     text-align: center;
+    margin-left: 0;
+    margin-right: 5px;
+    margin-bottom: 30px;
   }
 
   @include vp-767 {
-  }
-}
-
-.coach__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-left: 56px;
-  padding-right: 56px;
-  padding-top: 48px;
-  width: 100%;
-
-  @include vp-1199 {
-    padding-top: 31px;
-    padding-left: 40px;
-    padding-right: 40px;
-    gap: 30px;
-    justify-content: center;
-  }
-
-  @include vp-767 {
+    margin-bottom: 42px;
   }
 }
 
 .coach__item {
-  flex: 0 0 20%;
   position: relative;
   aspect-ratio: 260/294;
 
+  &:hover {
+    background-color: rgba(16, 38, 84, 0.89);
+  }
+
   @include vp-1199 {
-    flex: 0 0 45%;
     aspect-ratio: 268/294;
   }
 
   @include vp-767 {
-    flex: 0 0 100%;
     aspect-ratio: 226/274;
   }
 }
@@ -80,7 +67,7 @@
   color: $color-default-white;
   margin: 0;
   position: absolute;
-  bottom: 30px;
+  bottom: 22px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -93,15 +80,36 @@
   }
 }
 
-.coach__pagination {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.coach__description ul {
+  margin: 0;
+  padding: 0;
+}
+
+.coach__description p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #b6bdcc;
+}
+
+.coach__description li {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $color-default-white;
+}
+
+.coach__item img {
+  display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  @include vp-1199 {
-  }
-
-  @include vp-767 {
-  }
+.coach__description {
+  display: none;
 }

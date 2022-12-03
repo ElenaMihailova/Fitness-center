@@ -3,30 +3,29 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
 const sliderCoaches = () => {
   const swiperCoaches = new Swiper('.swiper-coaches', {
-    modules: [Navigation, Pagination],
+    modules: [Navigation],
     observer: true,
     slidesPerView: 4,
-    spaceBetween: 34,
-    // slidesPerGroup: 40,
-    // autoHeight: true,
+    slidesPerGroup: 1,
     loop: true,
-    // loopFillGroupWithBlank: true,
+    loopFillGroupWithBlank: true,
+    autoHeight: true,
     navigation: {
-      nextEl: '.slider__button-next--coaches',
-      prevEl: '.slider__button-prev--coaches',
+      nextEl: '.swiper__button-next--coaches',
+      prevEl: '.swiper__button-prev--coaches',
     },
     breakpoints: {
       320: {
         slidesPerView: 1,
-        // spaceBetween: 20,
+        spaceBetween: 20,
       },
       768: {
         slidesPerView: 2,
-        // spaceBetween: 30,
+        spaceBetween: 30,
       },
       1200: {
         slidesPerView: 4,
-        // spaceBetween: 40,
+        spaceBetween: 40,
       },
     },
   });

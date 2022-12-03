@@ -2,21 +2,6 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {sliderCoaches, sliderFeedback} from './modules/slider';
 
-// import Swiper, { Navigation } from 'swiper';
-// const swiper = new Swiper('.swiper', {
-//   modules: [ Navigation ],
-//   speed: 400,
-//   spaceBetween: 100,
-//   slidesPerView: 2,
-//   loop: true,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
-// console.log(swiper);
-
-
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
