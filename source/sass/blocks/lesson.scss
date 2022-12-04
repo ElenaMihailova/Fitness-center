@@ -4,7 +4,6 @@
   padding-top: 56px;
   padding-bottom: 68px;
   padding-left: 30px;
-  padding-right: 30px;
   display: flex;
   justify-content: end;
   padding-right: 170px;
@@ -52,7 +51,6 @@
   margin: 0;
   margin-right: 21px;
   max-width: 389px;
-  margin-bottom: 0px;
 
   @include vp-1199 {
     font-size: 42px;
@@ -80,7 +78,6 @@
 
   @include vp-767 {
     margin-left: 0;
-    margin-bottom: 17px;
     width: 100%;
     padding-bottom: 0;
     margin-bottom: 12px;
@@ -133,17 +130,18 @@
   background-color: inherit;
   padding: 10px;
   padding-left: 0;
+  color: $color-default-white;
+}
 
-  // &::hover,
-  // &::focus,
-  // &::active {
-  //   border: none;
-  //   outline: none;
-  // }
+.lesson__form input:hover,
+.lesson__form input:focus,
+.lesson__form input:active {
+  border: none;
+  outline: none;
 }
 
 .lesson__form input::placeholder {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

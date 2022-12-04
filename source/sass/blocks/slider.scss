@@ -6,20 +6,8 @@
   background-repeat: no-repeat;
   width: 16px;
   height: 32px;
-
-  @include vp-1199 {
-  }
-
-  @include vp-767 {
-  }
 }
 
 .slider__button-next {
   transform: rotate(180deg);
-
-  @include vp-1199 {
-  }
-
-  @include vp-767 {
-  }
 }

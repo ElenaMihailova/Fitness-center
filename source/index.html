@@ -92,8 +92,26 @@
                   srcset="img/promo-desktop@2.png 2x">
               </picture>
             </div>
-            <div class="promo__video video">
-              <video class="video__content"></video>
+            <div class="promo__video video" data-video="video-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                      img/background.webp   1x,
+                      img/background@2.webp 2x
+                          " />
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                img/background-tablet.webp  1x,
+                img/background-tablet@2.webp 2x
+                        " />
+                <source type="image/webp" media="(min-width: 320px)" srcset="
+                img/background-mobile.webp  1x,
+                img/background-mobile@2.webp 2x
+                        " />
+                <img class="video__background" src="img/background.jpg" srcset="img/background@2.jpg"
+                  alt="Обложка видео - тренажерный зал" width="364" height="228">
+              </picture>
+              <video class="video__player" src="media/video.mp4" controls data-video="video-player"></video>
+              <button type="button" class="video__control" aria-label="Проиграть видео"
+                data-video="play-button"></button>
             </div>
           </div>
         </section>
@@ -103,14 +121,14 @@
             <h2 class="membership__title title title--big">Абонементы</h2>
             <div class="membership__tabs tabs">
               <ul class="tabs__list">
-                <li class="tabs__item tabs__item--active" tabindex="0"><a>1 месяц</a></li>
-                <li class="tabs__item" tabindex="0"><a>6 месяцев</a></li>
-                <li class="tabs__item" tabindex="0"><a>12 месяцев</a></li>
+                <li class="tabs__item tabs__item--active" data-tab-control="month"><a>1 месяц</a></li>
+                <li class="tabs__item" data-tab-control="half-year"><a>6 месяцев</a></li>
+                <li class="tabs__item" data-tab-control="year"><a>12 месяцев</a></li>
               </ul>
             </div>
             <div class="membership__wrapper">
-              <ul class="membership__sublist membership__sublist--active">
-                <li class="membership__card card">
+              <ul class="membership__sublist membership__sublist--active" data-tab-content="month">
+                <li class="membership__card card" tabindex="0">
                   <h4>С тренером</h4>
                   <span>12 занятий</span>
                   <div>
@@ -119,7 +137,7 @@
                   </div>
                   <a href="#">купить абонемент</a>
                 </li>
-                <li class="membership__card card card--active">
+                <li class="membership__card card" tabindex="0">
                   <h4>Дневной</h4>
                   <span>с 8:00 до 17:00 </span>
                   <div>
@@ -128,7 +146,7 @@
                   </div>
                   <a href="#">купить абонемент</a>
                 </li>
-                <li class="membership__card card">
+                <li class="membership__card card" tabindex="0">
                   <h4>Полный день</h4>
                   <span>с 8:00 до 22:00 </span>
                   <div>
@@ -138,8 +156,8 @@
                   <a href="#">купить абонемент</a>
                 </li>
               </ul>
-              <ul class="membership__sublist">
-                <li class="membership__card card">
+              <ul class="membership__sublist" data-tab-content="half-year">
+                <li class="membership__card card" tabindex="0">
                   <h4>С тренером</h4>
                   <span>12 занятий в месяц</span>
                   <div>
@@ -148,7 +166,7 @@
                   </div>
                   <a href="#">купить абонемент</a>
                 </li>
-                <li class="membership__card card">
+                <li class="membership__card card" tabindex="0">
                   <h4>Дневной</h4>
                   <span>с 8:00 до 17:00 </span>
                   <div>
@@ -157,7 +175,7 @@
                   </div>
                   <a href="#">купить абонемент</a>
                 </li>
-                <li class="membership__card card">
+                <li class="membership__card card" tabindex="0">
                   <h4>Полный день</h4>
                   <span>с 8:00 до 22:00 </span>
                   <div>
@@ -167,8 +185,8 @@
                   <a href="#">купить абонемент</a>
                 </li>
               </ul>
-              <ul class="membership__sublist">
-                <li class="membership__card card">
+              <ul class="membership__sublist" data-tab-content="year">
+                <li class="membership__card card" tabindex="0">
                   <h4>С тренером</h4>
                   <span>12 занятий в месяц</span>
                   <div>
@@ -177,7 +195,7 @@
                   </div>
                   <a href="#">купить абонемент</a>
                 </li>
-                <li class="membership__card card">
+                <li class="membership__card card" tabindex="0">
                   <h4>Дневной</h4>
                   <span>с 8:00 до 17:00 </span>
                   <div>
@@ -186,7 +204,7 @@
                   </div>
                   <a href="#">купить абонемент</a>
                 </li>
-                <li class="membership__card card">
+                <li class="membership__card card" tabindex="0">
                   <h4>Полный день</h4>
                   <span>с 8:00 до 22:00 </span>
                   <div>
@@ -206,6 +224,7 @@
                 <img src="../img/member-bg.webp" alt="Розовые блины" width="260" height="294">
               </picture>
             </div>
+          </div>
         </section>
 
         <section class="advertisement">
@@ -469,19 +488,19 @@
 
         <div class="main__order">
           <section class="lesson">
-            <form class="lesson__form">
+            <form class="lesson__form" action="https://echo.htmlacademy.ru/" method="post" data-form="order-form">
               <h2>Бесплатное занятие </h2>
               <div class="lesson__wrapper">
                 <fieldset>
-                  <label class="visually-hidden">Имя</label>
-                  <input type="text" placeholder="Имя" required>
+                  <label class="visually-hidden" for="name">Имя</label>
+                  <input type="text" id="name" placeholder="Имя" data-input="name-field" required>
                 </fieldset>
                 <fieldset>
-                  <label class="visually-hidden">Телефон</label>
-                  <input type="tel" placeholder="Телефон" required>
+                  <label class="visually-hidden" for="phone">Телефон</label>
+                  <input type="tel" id="phone" placeholder="Телефон" maxlength="16" required data-input="phone-field">
                 </fieldset>
               </div>
-              <button type="submit">отправить</button>
+              <button type="submit" data-button="submit-button">отправить</button>
             </form>
           </section>
 

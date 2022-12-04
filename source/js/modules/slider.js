@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, {Navigation, Pagination} from 'swiper';
 
 const sliderCoaches = () => {
   const swiperCoaches = new Swiper('.swiper-coaches', {

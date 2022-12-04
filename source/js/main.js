@@ -1,6 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {sliderCoaches, sliderFeedback} from './modules/slider';
+import {video} from './modules/video/video';
+import {tabs} from './modules/tabs/tabs';
+import {validate} from './modules/validate/validate';
+
 
 // ---------------------------------
 
@@ -20,6 +24,9 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     sliderCoaches();
     sliderFeedback();
+    video();
+    tabs();
+    validate();
   });
 });
 
