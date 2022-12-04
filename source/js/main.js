@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {sliderCoaches, sliderFeedback} from './modules/slider';
 import {video} from './modules/video/video';
 import {tabs} from './modules/tabs/tabs';
-import {validate} from './modules/validate/validate';
+import {validityForm, sendUserFormData, contactsForm, inputPhoneContacts, inputNameContacts} from './modules/validate/validate';
 
 
 // ---------------------------------
@@ -26,7 +26,8 @@ window.addEventListener('DOMContentLoaded', () => {
     sliderFeedback();
     video();
     tabs();
-    validate();
+    validityForm(inputPhoneContacts, inputNameContacts);
+    sendUserFormData(contactsForm);
   });
 });
 

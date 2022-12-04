@@ -488,16 +488,16 @@
 
         <div class="main__order">
           <section class="lesson">
-            <form class="lesson__form" action="https://echo.htmlacademy.ru/" method="post" data-form="order-form">
+            <form class="lesson__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
               <h2>Бесплатное занятие </h2>
               <div class="lesson__wrapper">
                 <fieldset>
                   <label class="visually-hidden" for="name">Имя</label>
-                  <input type="text" id="name" placeholder="Имя" data-input="name-field" required>
+                  <input type="text" id="name" name="name" placeholder="Имя" required minlength="1" maxlength="50">
                 </fieldset>
                 <fieldset>
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input type="tel" id="phone" placeholder="Телефон" maxlength="16" required data-input="phone-field">
+                  <input type="tel" id="phone" name="phone" placeholder="Телефон" maxlength="10" required>
                 </fieldset>
               </div>
               <button type="submit" data-button="submit-button">отправить</button>

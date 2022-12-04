@@ -1,127 +1,106 @@
-const validate = () => {
-  const feedbackForm = document.querySelector('[data-form="order-form"]');
+const validityInputNumber = /^[0-9]{1,10}$/;
+const contactsSection = document.querySelector('.lesson');
+const contactsForm = contactsSection.querySelector('form');
+const inputPhoneContacts = contactsForm.querySelector('#phone');
+const inputNameContacts = contactsForm.querySelector('#name');
+const MIN_LENGTH_PHONE = 10;
+const MAX_LENGTH_PHONE = 10;
+const URL_SERVER = 'https://echo.htmlacademy.ru';
 
-  validateForm(feedbackForm);
-
-  function validateForm(form) {
-    let isStorageSupport = true;
-    let storageName = '';
-    let storagePhone = '';
-
-    try {
-      storageName = localStorage.getItem('name');
-      storagePhone = localStorage.getItem('phone');
-    } catch (err) {
-      isStorageSupport = false;
-    }
-
-    const nameField = form.querySelector('[data-input="name-field"]');
-    const phoneField = form.querySelector('[data-input="phone-field"]');
-    const submitButton = form.querySelector('[data-button="submit-button"]');
-
-    const phonePattern = /^8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}$/;
-
-    if (storageName) {
-      nameField.value = storageName;
-    }
-
-    if (storagePhone) {
-      phoneField.value = storagePhone;
-    }
-
-    nameField.addEventListener('input', (evt) => {
-      evt.preventDefault();
-      const regName = /^[A-Za-zА-яа-я\s]+$/;
-      let invalidMessage = [];
-      nameField.setCustomValidity('');
-      const name = nameField.value.trim();
-
-      if (name.length !== 0) {
-        if (!regName.test(name)) {
-          invalidMessage.push('The name can contain only alphabetic characters.');
-        }
-      }
-
-      if (name.length > 255) {
-        invalidMessage.push('The name cannot be longer than 255 characters.');
-      }
-
-      if (invalidMessage.length > 0) {
-        nameField.setCustomValidity(invalidMessage.join('\n'));
-      }
-      nameField.reportValidity();
-    });
-
-    phoneField.addEventListener('input', (evt) => {
-      const input = evt.target;
-      let inputNumbersValue = input.value.replace(/\D+/g, '');
-      const selectionStart = input.selectionStart;
-      let outputNumbersValue = '';
-
-      if (input.value.length !== selectionStart) {
-        if (evt.data && /\D/g.test(evt.data)) {
-          input.value = inputNumbersValue;
-        }
-        return;
-      }
-
-      if (inputNumbersValue.length > 0) {
-        if (inputNumbersValue[0] !== '8') {
-          inputNumbersValue = '8' + inputNumbersValue;
-        }
-
-        const phonePrefix = '8';
-        outputNumbersValue = input.value = phonePrefix;
-        if (inputNumbersValue.length > 1) {
-          outputNumbersValue += '-' + inputNumbersValue.substring(1, 4);
-        }
-        if (inputNumbersValue.length >= 5) {
-          outputNumbersValue += '-' + inputNumbersValue.substring(4, 7);
-        }
-        if (inputNumbersValue.length >= 8) {
-          outputNumbersValue += '-' + inputNumbersValue.substring(7, 9);
-        }
-        if (inputNumbersValue.length >= 10) {
-          outputNumbersValue += '-' + inputNumbersValue.substring(9, 11);
-        }
-      }
-
-      input.value = outputNumbersValue;
-    });
-
-    phoneField.addEventListener('keydown', (evt) => {
-      let phoneValue = phoneField.value.replace(/\D+/g, '');
-      if (evt.keyCode === 8 && phoneValue.length === 1) {
-        phoneField.value = '';
-      }
-    });
-
-    submitButton.addEventListener('click', (evt) => {
-      if (nameField.value === '') {
-        evt.preventDefault();
-        nameField.setCustomValidity('Name is required.');
-        nameField.reportValidity();
-        nameField.focus();
-      } else if (phoneField.value === '') {
-        evt.preventDefault();
-        phoneField.setCustomValidity('Phone is required.');
-        phoneField.reportValidity();
-        phoneField.focus();
-      } else if (!phonePattern.test(phoneField.value) && phoneField.value !== '') {
-        evt.preventDefault();
-        phoneField.setCustomValidity('Invalid phone number.');
-        phoneField.reportValidity();
-        phoneField.focus();
-      } else {
-        phoneField.setCustomValidity('');
-        phoneField.reportValidity();
-        if (isStorageSupport) {
-          localStorage.setItem('name', nameField.value);
-          localStorage.setItem('phone', phoneField.value);
-        }
-      }
-    });
+const onInputValueMissing = (evt) => {
+  const field = evt.target;
+  if (field.validity.valueMissing) {
+    field.setCustomValidity('Заполните обязательное поле');
+    setFormError(field);
   }
 };
 
-export {validate};
+const onInputValueError = (evt) => {
+  const field = evt.target;
+  setFormError(field);
+};
+
+const setFormError = (nameInput) => {
+  nameInput.classList.add('invalid');
+};
+
+const setFormValidityOk = (evt) => {
+  const field = evt.target;
+  field.classList.remove('invalid');
+};
+
+const validityForm = (phone, name) => {
+  phone.addEventListener('input', (evt) => {
+    const lengthInputPhone = phone.value.length;
+
+    if (!validityInputNumber.test(phone.value)) {
+      onInputValueError(evt);
+      phone.setCustomValidity('Номер телефона должен содержать только цифры');
+    } else if (lengthInputPhone < MIN_LENGTH_PHONE) {
+      onInputValueError(evt);
+      phone.setCustomValidity(`Еще нужно ввести минимум ${MIN_LENGTH_PHONE - lengthInputPhone} цифр`);
+    } else if (lengthInputPhone > MAX_LENGTH_PHONE) {
+      onInputValueError(evt);
+      phone.setCustomValidity(`Нужно удалить ${lengthInputPhone - MAX_LENGTH_PHONE} цифр`);
+    } else {
+      phone.setCustomValidity('');
+      setFormValidityOk(evt);
+    }
+    phone.reportValidity();
+  });
+  name.addEventListener('input', (evt) => {
+    const lengthInputName = name.value.length;
+    if (lengthInputName > 0) {
+      name.setCustomValidity('');
+      setFormValidityOk(evt);
+    } else {
+      onInputValueError(evt);
+      name.setCustomValidity('Введите свое имя');
+    }
+    name.reportValidity();
+  });
+
+  phone.addEventListener('invalid', onInputValueMissing, true);
+  name.addEventListener('invalid', onInputValueMissing, true);
+};
+
+const reset = (nameForm) => {
+  const formInputs = nameForm.querySelectorAll('input');
+  formInputs.forEach((input) => {
+    input.value = '';
+  });
+};
+
+const openErrorAlert = (nameForm) => {
+  const alertText = document.createElement('p');
+
+  alertText.classList.add('error');
+  alertText.textContent = 'Ошибка отправки! Перезагрузите страницу!';
+  nameForm.append(alertText);
+  const errorTrue = nameForm.querySelectorAll('.error');
+  if (errorTrue.length > 1) {
+    alertText.remove();
+  }
+};
+
+const sendData = ((body, onSuccess, onFail) => {
+  fetch(URL_SERVER, {method: 'POST', body}
+  ).then((responce) => {
+    if (responce.ok) {
+      onSuccess();
+    } else {
+      onFail();
+    }
+  }).catch(() => {
+    onFail();
+  });
+});
+
+const sendUserFormData = (nameForm) => {
+  nameForm.addEventListener('submit', (evt) => {
+    const field = evt.target;
+    sendData(new FormData(field), () => reset(nameForm), () => openErrorAlert(nameForm));
+  });
+};
+
+export {validityForm, sendUserFormData, contactsForm, inputPhoneContacts, inputNameContacts};
