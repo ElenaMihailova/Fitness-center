@@ -2414,6 +2414,7 @@ button,
 .coach__item {
   position: relative;
   aspect-ratio: 260/294;
+  cursor: pointer;
 }
 
 .coach__item h3 {
