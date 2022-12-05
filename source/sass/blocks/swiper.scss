@@ -31,6 +31,12 @@
   right: -5%;
   background-image: url("../img/svg/arrow.svg");
 
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url("../img/svg/arrow-activ.svg");
+  }
+
   @include vp-1199 {
     right: -10%;
   }
@@ -44,6 +50,12 @@
   left: -5%;
 
   background-image: url("../img/svg/arrow-prev.svg");
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url("../img/svg/arrow-prev-activ.svg");
+  }
 
   @include vp-1199 {
     left: -10%;

@@ -2289,7 +2289,7 @@ button,
   grid-row: 4/5;
   grid-column: 1/-1;
   text-align: center;
-  padding-top: 29px;
+  padding-top: 24px;
   padding-bottom: 23px;
   margin-top: 26px;
 }
@@ -2317,8 +2317,8 @@ button,
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  margin-bottom: 17px;
-  padding-top: 16px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .advertisement__date {
@@ -2333,13 +2333,15 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 21px;
 }
 
 .advertisement__date-name {
   margin: 0;
   border-bottom: 1px solid #ffffff;
-  line-height: 27px;
+  line-height: 1;
+  padding-top: 4px;
+  padding-bottom: 10px;
 }
 
 .advertisement__date p {
@@ -2348,6 +2350,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 3px;
+  padding-top: 3px;
 }
 
 .advertisement__date-number span {
@@ -2370,17 +2373,20 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   font-size: 14px;
-  padding-top: 9px;
   padding-left: 5px;
 }
 
 .advertisement__date-time {
   font-weight: 700;
   font-size: 40px;
-  line-height: 1.5;
+  line-height: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.advertisement__date--time {
+  margin-top: 19px;
 }
 
 .coach {
@@ -2437,7 +2443,7 @@ button,
   margin: 0;
   padding: 0;
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 45px;
 }
 
 .coach__description li::marker {
@@ -2452,8 +2458,7 @@ button,
   font-size: 16px;
   line-height: 1.5;
   color: #b6bdcc;
-  margin: 0;
-  margin-bottom: 34px;
+  margin: 13px 0 18%;
 }
 
 .coach__item img {
@@ -2477,10 +2482,11 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 75px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  padding: 23%;
+  padding-left: 26px;
+  padding-right: 26px;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 .coach__item:hover img {
@@ -2498,7 +2504,7 @@ button,
 }
 
 .coach__item:hover h3 {
-  top: 20px;
+  top: 18%;
   bottom: auto;
 }
 
@@ -2507,8 +2513,13 @@ button,
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1;
   color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.coach__description li:last-child {
+  margin-bottom: 0;
 }
 
 .advantages {
@@ -3473,9 +3484,21 @@ button,
   background-image: url("../img/svg/arrow.svg");
 }
 
+.swiper__button-next:hover,
+.swiper__button-next:focus,
+.swiper__button-next:active {
+  background-image: url("../img/svg/arrow-activ.svg");
+}
+
 .swiper__button-prev {
   left: -5%;
   background-image: url("../img/svg/arrow-prev.svg");
+}
+
+.swiper__button-prev:hover,
+.swiper__button-prev:focus,
+.swiper__button-prev:active {
+  background-image: url("../img/svg/arrow-prev-activ.svg");
 }
 
 /* @mixin hover-focus {
@@ -3591,6 +3614,12 @@ button,
     width: 83%;
     margin-top: 35px;
     margin-left: auto;
+  }
+
+  .about__img {
+    aspect-ratio: 324/390;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .promo {
@@ -3727,16 +3756,18 @@ button,
   }
 
   .advertisement__order {
+    -ms-grid-rows: auto auto auto;
+    grid-template-rows: auto auto auto;
     padding: 50px 45px;
     width: 50%;
-    padding-top: 43px;
+    padding-top: 47px;
     padding-bottom: 30px;
   }
 
   .advertisement__title {
     font-size: 48px;
     line-height: 96%;
-    margin-top: 17px;
+    margin-top: 12px;
     margin-left: 7px;
   }
 
@@ -3757,24 +3788,39 @@ button,
     padding-bottom: 16px;
     border: 2px solid #ffffff;
     margin: 0;
+    margin-top: 5px;
   }
 
   .advertisement__text {
     font-size: 12px;
     padding-top: 0;
-    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: -25px;
   }
 
   .advertisement__date {
     font-size: 12px;
   }
 
+  .advertisement__date p {
+    padding-bottom: 4px;
+  }
+
+  .advertisement__date-number span {
+    font-size: 10px;
+  }
+
   .advertisement__date-number {
     padding: 0;
+    font-size: 10px;
   }
 
   .advertisement__date-time {
     font-size: 24px;
+  }
+
+  .advertisement__date--time {
+    margin-top: -35px;
   }
 
   .coach {
@@ -3799,8 +3845,16 @@ button,
     aspect-ratio: 268/294;
   }
 
+  .coach__description ul {
+    padding-left: 44px;
+  }
+
+  .coach__description p {
+    margin: 13px 0 18%;
+  }
+
   .coach__item:hover h3 {
-    top: 48px;
+    top: 18%;
   }
 
   .advantages {
@@ -4417,11 +4471,11 @@ button,
     padding: 50px 44px;
     max-width: none;
     padding-bottom: 49px;
-    padding-top: 44px;
+    padding-top: 49px;
   }
 
   .advertisement__title {
-    margin-top: 7px;
+    margin-top: 3px;
   }
 
   .advertisement__img-wrap {
@@ -4431,6 +4485,20 @@ button,
 
   .advertisement__img {
     aspect-ratio: 290/292;
+  }
+
+  .advertisement__link {
+    margin-top: 29px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .advertisement__text {
+    margin-top: 5px;
+  }
+
+  .advertisement__date--time {
+    margin-top: 0;
   }
 
   .coach {
@@ -4447,8 +4515,16 @@ button,
     aspect-ratio: 226/274;
   }
 
+  .coach__description ul {
+    padding-left: 24px;
+  }
+
+  .coach__description p {
+    margin: 13px 0 21%;
+  }
+
   .coach__item:hover h3 {
-    top: 20px;
+    top: 15%;
   }
 
   .advantages {

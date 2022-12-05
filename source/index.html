@@ -7,6 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
   <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AlumniSans-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AlumniSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AlumniSans-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AlumniSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/rouble.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="./img/favicon/favicon-32x32.png">
   <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon">
   <title>Фитнес центр</title>
@@ -43,14 +51,10 @@
 
           <div class="about__img-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="
+              <source type="image/webp" srcset="
                     img/about-desktop.webp   1x,
                     img/about-desktop@2.webp 2x
                         " />
-              <source type="image/webp" media="(min-width: 768px)" srcset="
-                        img/about-tablet.webp  1x,
-                        img/about-tablet@2.webp 2x
-                      " />
               <img class="about__img" alt="Мужчина в футболке с логотипом Супермен" width="500" height="556"
                 src="img/about-desktop.png" srcset="img/about-desktop@2.png 2x">
             </picture>
@@ -219,7 +223,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="
                 img/member-bg-tablet.webp  1x,
-                          img/promo-tablet@2.webp 2x
+                          img/member-bg-tablet@2.webp 2x
                         " />
                 <img src="../img/member-bg.webp" alt="Розовые блины" width="260" height="294">
               </picture>
@@ -237,7 +241,7 @@
                 <p><span class="advertisement__date-time">7</span> <span class="advertisement__date-number">Марта
                     <span>2019</span></span></p>
               </div>
-              <div class="advertisement__date">
+              <div class="advertisement__date advertisement__date--time">
                 <p class="advertisement__date-name">Время</p>
                 <span class="advertisement__date-time">12:00</span>
               </div>
@@ -270,7 +274,7 @@
               <h2 class="coach__title title title--big">Тренеры</h2>
               <ul class="swiper-wrapper">
                 <li class="coach__item swiper-slide" tabindex=0>
-                  <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
+                  <img src="img/pavlova.webp" width="260" height="294" alt="Портрет Анна Павлова">
                   <h3>Анна Павлова</h3>
                   <div class="coach__description">
                     <p>CrossFit</p>
@@ -282,7 +286,7 @@
                   </div>
                 </li>
                 <li class="coach__item swiper-slide" tabindex=0>
-                  <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
+                  <img src="img/lavrov.webp" width="260" height="294" alt="Портрет Алексей Лавров">
                   <h3>Алексей Лавров</h3>
                   <div class="coach__description">
                     <p>CrossFit</p>
@@ -294,7 +298,7 @@
                   </div>
                 </li>
                 <li class="coach__item swiper-slide">
-                  <img src="img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
+                  <img src="img/pashkov.webp" width="260" height="294" alt="Портрет Александр Пашков">
                   <h3>Александр Пашков</h3>
                   <div class="coach__description">
                     <p>CrossFit</p>
@@ -306,7 +310,7 @@
                   </div>
                 </li>
                 <li class="coach__item swiper-slide">
-                  <img src="img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
+                  <img src="img/ketova.webp" width="260" height="294" alt="Портрет Мария Кетова">
                   <h3>Мария Кетова</h3>
                   <div class="coach__description">
                     <p>CrossFit</p>
@@ -318,7 +322,7 @@
                   </div>
                 </li>
                 <li class="coach__item swiper-slide">
-                  <img src="img/pavlova.png" width="260" height="294" alt="Портрет Анна Павлова">
+                  <img src="img/pavlova.webp" width="260" height="294" alt="Портрет Анна Павлова">
                   <h3>Анна Павлова</h3>
                   <div class="coach__description">
                     <p>CrossFit</p>
@@ -330,7 +334,7 @@
                   </div>
                 </li>
                 <li class="coach__item swiper-slide">
-                  <img src="img/lavrov.png" width="260" height="294" alt="Портрет Алексей Лавров">
+                  <img src="img/lavrov.webp" width="260" height="294" alt="Портрет Алексей Лавров">
                   <h3>Алексей Лавров</h3>
                   <div class="coach__description">
                     <p>CrossFit</p>
@@ -342,7 +346,7 @@
                   </div>
                 </li>
                 <li class="coach__item swiper-slide">
-                  <img src="img/pashkov.png" width="260" height="294" alt="Портрет Александр Пашков">
+                  <img src="img/pashkov.webp" width="260" height="294" alt="Портрет Александр Пашков">
                   <h3>Александр Пашков</h3>
                   <div class="coach__description">
                     <p>CrossFit</p>
@@ -354,7 +358,7 @@
                   </div>
                 </li>
                 <li class="coach__item swiper-slide">
-                  <img src="img/ketova.png" width="260" height="294" alt="Портрет Мария Кетова">
+                  <img src="img/ketova.webp" width="260" height="294" alt="Портрет Мария Кетова">
                   <h3>Мария Кетова</h3>
                   <div class="coach__description">
                     <p>CrossFit</p>
@@ -482,8 +486,8 @@
               </div>
             </div>
           </div>
-          <button class="reviews__button-prev reviews__button-prev--feedback"></button>
-          <button class="reviews__button-next reviews__button-next--feedback"></button>
+          <button class="reviews__button-prev reviews__button-prev--feedback" aria-label="Предыдущий слайд"></button>
+          <button class="reviews__button-next reviews__button-next--feedback" aria-label="Следующий слайд"></button>
         </section>
 
         <div class="main__order">
@@ -592,7 +596,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/vendor.min.js"></script>
+  <!-- <script src="js/vendor.min.js"></script> -->
   <script src="js/main.min.js"></script>
 </body>
 
