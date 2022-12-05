@@ -132,6 +132,16 @@
     color: $color-default-white;
   }
 
+  &:active {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: $color-default-white;
+  }
+
+  &:focus {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: $color-default-white;
+  }
+
   @include vp-1199 {
     width: 50%;
     margin-left: 4px;

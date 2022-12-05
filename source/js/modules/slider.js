@@ -11,8 +11,8 @@ const sliderCoaches = () => {
     loopFillGroupWithBlank: true,
     autoHeight: true,
     navigation: {
-      nextEl: '.swiper__button-next--coaches',
-      prevEl: '.swiper__button-prev--coaches',
+      nextEl: '.swiper-btn-prev--coaches',
+      prevEl: '.swiper-btn-next--coaches',
     },
     breakpoints: {
       320: {

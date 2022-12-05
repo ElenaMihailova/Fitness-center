@@ -14,6 +14,7 @@
   <link rel="preload" href="./fonts/AlumniSans-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/AlumniSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/rouble.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="./img/favicon/favicon-32x32.png">
   <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon">
   <title>Фитнес центр</title>
@@ -124,9 +125,9 @@
             <h2 class="membership__title title title--big">Абонементы</h2>
             <div class="membership__tabs tabs">
               <ul class="tabs__list">
-                <li class="tabs__item tabs__item--active" data-tab-control="month"><a>1 месяц</a></li>
-                <li class="tabs__item" data-tab-control="half-year"><a>6 месяцев</a></li>
-                <li class="tabs__item" data-tab-control="year"><a>12 месяцев</a></li>
+                <li class="tabs__item tabs__item--active" data-tab-control="month" tabindex="0"><a>1 месяц</a></li>
+                <li class="tabs__item" data-tab-control="half-year" tabindex="0"><a>6 месяцев</a></li>
+                <li class="tabs__item" data-tab-control="year" tabindex="0"><a>12 месяцев</a></li>
               </ul>
             </div>
             <div class="membership__wrapper">
@@ -370,10 +371,9 @@
                 </li>
               </ul>
             </div>
-            <button class="swiper__button-prev swiper__button-prev--coaches" aria-label="Предыдущий слайд"></button>
-            <button class="swiper__button-next swiper__button-next--coaches" aria-label="Следующий слайд"></button>
+            <button class="swiper-btn-prev swiper-btn-prev--coaches" aria-label="Предыдущий слайд"></button>
+            <button class="swiper-btn-next swiper-btn-next--coaches" aria-label="Следующий слайд"></button>
           </div>
-
         </section>
 
         <section class="advantages">

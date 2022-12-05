@@ -1842,6 +1842,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  text-align: center;
 }
 
 .about__button:hover,
@@ -1896,6 +1897,7 @@ button,
 .promo__wrap {
   height: 100%;
   margin-left: auto;
+  background-color: #b6bdcc;
 }
 
 .promo__order {
@@ -2191,6 +2193,18 @@ button,
   color: #ffffff;
 }
 
+.card a:active {
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: #ffffff;
+}
+
+.card a:focus {
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: #ffffff;
+}
+
 .card__price-shadow {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -2266,6 +2280,10 @@ button,
   grid-row: 1/3;
   margin-left: 13px;
   margin-top: 4px;
+}
+
+.advertisement__img-wrap {
+  background-color: #103aae;
 }
 
 .advertisement__img {
@@ -2421,6 +2439,7 @@ button,
   position: relative;
   aspect-ratio: 260/294;
   cursor: pointer;
+  background-color: #b6bdcc;
 }
 
 .coach__item h3 {
@@ -2892,6 +2911,7 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 280px;
+  background-color: #103aae;
 }
 
 .reviews {
@@ -3099,6 +3119,40 @@ button,
 .lesson__form input:active {
   border: none;
   outline: none;
+}
+
+.lesson__form input:hover::-webkit-input-placeholder,
+.lesson__form input:focus::-webkit-input-placeholder,
+.lesson__form input:active::-webkit-input-placeholder {
+  color: #ff1553;
+}
+
+.lesson__form input:hover::-moz-placeholder,
+.lesson__form input:focus::-moz-placeholder,
+.lesson__form input:active::-moz-placeholder {
+  color: #ff1553;
+}
+
+.lesson__form input:hover:-ms-input-placeholder,
+.lesson__form input:focus:-ms-input-placeholder,
+.lesson__form input:active:-ms-input-placeholder {
+  color: #ff1553;
+}
+
+.lesson__form input:hover::-ms-input-placeholder,
+.lesson__form input:focus::-ms-input-placeholder,
+.lesson__form input:active::-ms-input-placeholder {
+  color: #ff1553;
+}
+
+.lesson__form input:hover::placeholder,
+.lesson__form input:focus::placeholder,
+.lesson__form input:active::placeholder {
+  color: #ff1553;
+}
+
+input:hover .lesson__form fieldset::after {
+  background-color: aqua;
 }
 
 .lesson__form input::-webkit-input-placeholder {
@@ -3322,6 +3376,8 @@ button,
   height: 32px;
   margin-top: 11px;
   margin-left: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .navigation {
@@ -3463,8 +3519,8 @@ button,
   padding: 0;
 }
 
-.swiper__button-prev,
-.swiper__button-next {
+.swiper-btn-prev,
+.swiper-btn-next {
   border: none;
   background-color: inherit;
   background-repeat: no-repeat;
@@ -3479,25 +3535,25 @@ button,
   z-index: 1;
 }
 
-.swiper__button-next {
+.swiper-btn-next {
   right: -5%;
   background-image: url("../img/svg/arrow.svg");
 }
 
-.swiper__button-next:hover,
-.swiper__button-next:focus,
-.swiper__button-next:active {
+.swiper-btn-next:hover,
+.swiper-btn-next:focus,
+.swiper-btn-next:active {
   background-image: url("../img/svg/arrow-activ.svg");
 }
 
-.swiper__button-prev {
+.swiper-btn-prev {
   left: -5%;
   background-image: url("../img/svg/arrow-prev.svg");
 }
 
-.swiper__button-prev:hover,
-.swiper__button-prev:focus,
-.swiper__button-prev:active {
+.swiper-btn-prev:hover,
+.swiper-btn-prev:focus,
+.swiper-btn-prev:active {
   background-image: url("../img/svg/arrow-prev-activ.svg");
 }
 
@@ -3793,8 +3849,8 @@ button,
 
   .advertisement__text {
     font-size: 12px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-top: -25px;
   }
 
@@ -4229,16 +4285,16 @@ button,
     font-size: 18px;
   }
 
-  .swiper__button-prev,
-  .swiper__button-next {
+  .swiper-btn-prev,
+  .swiper-btn-next {
     top: 62%;
   }
 
-  .swiper__button-next {
+  .swiper-btn-next {
     right: -10%;
   }
 
-  .swiper__button-prev {
+  .swiper-btn-prev {
     left: -10%;
   }
 }
@@ -4963,17 +5019,17 @@ button,
     font-size: 16px;
   }
 
-  .swiper__button-prev,
-  .swiper__button-next {
+  .swiper-btn-prev,
+  .swiper-btn-next {
     width: 16px;
     height: 32px;
   }
 
-  .swiper__button-next {
+  .swiper-btn-next {
     right: -33px;
   }
 
-  .swiper__button-prev {
+  .swiper-btn-prev {
     left: -33px;
   }
 }

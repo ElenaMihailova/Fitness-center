@@ -43,6 +43,7 @@
   height: 32px;
   margin-top: 11px;
   margin-left: 0;
+  flex-shrink: 0;
 
   @include vp-1199 {
     width: 82px;

@@ -138,6 +138,10 @@
 .lesson__form input:active {
   border: none;
   outline: none;
+
+  &::placeholder {
+    color: $color-torch-red;
+  }
 }
 
 .lesson__form input::placeholder {
