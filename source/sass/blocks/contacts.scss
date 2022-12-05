@@ -170,7 +170,7 @@
   }
 }
 
-.contacts__item:nth-child(1) {
+.contacts__item--address {
   order: auto;
 
   @include vp-767 {
@@ -178,7 +178,7 @@
   }
 }
 
-.contacts__item:nth-child(2) {
+.contacts__item--phone {
   order: auto;
 
   @include vp-767 {
@@ -186,7 +186,7 @@
   }
 }
 
-.contacts__item:nth-child(3) {
+.contacts__item--schedule {
   order: auto;
 
   @include vp-767 {
@@ -194,7 +194,7 @@
   }
 }
 
-.contacts__item:nth-child(4) {
+.contacts__item--email {
   order: auto;
 
   @include vp-767 {

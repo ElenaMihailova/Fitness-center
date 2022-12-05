@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import Swiper, {Navigation, Pagination} from 'swiper';
+import Swiper, {Navigation} from 'swiper';
 
 const sliderCoaches = () => {
   const swiperCoaches = new Swiper('.swiper-coaches', {
@@ -11,8 +11,8 @@ const sliderCoaches = () => {
     loopFillGroupWithBlank: true,
     autoHeight: true,
     navigation: {
-      nextEl: '.swiper-btn-prev--coaches',
-      prevEl: '.swiper-btn-next--coaches',
+      nextEl: '.swiper-btn-next--coaches',
+      prevEl: '.swiper-btn-prev--coaches',
     },
     breakpoints: {
       320: {

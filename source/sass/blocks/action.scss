@@ -179,7 +179,7 @@
   color: $color-default-white;
   line-height: 1.4;
   margin: 0;
-  margin-bottom: 183px;
+  margin-bottom: 188px;
 
   @include vp-1199 {
     text-align: left;
@@ -199,33 +199,41 @@
   text-transform: uppercase;
   color: $color-default-white;
   margin-top: auto;
-  text-decoration-line: underline;
+  border-bottom: 1px solid $color-default-white;
+  width: fit-content;
+  padding-bottom: 3px;
 
   &:hover,
   &:focus,
   &:active {
     color: $color-egyptianBlue;
+    border-bottom: 1px solid $color-egyptianBlue;
+  }
+
+  @include vp-767 {
+    padding-bottom: 0;
   }
 }
 
 .action__item-text {
   background-color: $color-torchRed;
-  padding: 45px;
   padding-top: 34px;
   padding-left: 45px;
   padding-right: 10px;
+  padding-bottom: 41px;
   display: flex;
   flex-direction: column;
 
   @include vp-1199 {
     width: 41%;
-    padding: 34px 10px 47px 44px;
+    padding: 34px 10px 42px 44px;
   }
 
   @include vp-767 {
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 44px;
     align-items: center;
   }
 }

@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1160;
 
   @include vp-1199 {
     padding-top: 43px;
@@ -61,10 +60,12 @@
   background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
+  padding: 10px;
   width: 16px;
   height: 32px;
   position: absolute;
-  top: 51%;
+  top: 51.5%;
   transform: translateY(-50%);
   z-index: 1;
   cursor: pointer;
@@ -89,19 +90,21 @@
 
 .reviews__button-prev {
   transform: rotate(180deg);
-  left: 25.5%;
+  left: 25%;
 
   @include vp-1199 {
     left: 6%;
+    top: 50%;
   }
 
   @include vp-767 {
     left: 4%;
+    top: 51%;
   }
 }
 
 .reviews__button-next {
-  right: 25.5%;
+  right: 25%;
   top: 54.5%;
 
   @include vp-1199 {

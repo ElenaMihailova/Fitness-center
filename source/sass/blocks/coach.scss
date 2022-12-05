@@ -102,14 +102,17 @@
   font-size: 16px;
   line-height: 1.5;
   color: #b6bdcc;
-  margin: 13px 0 18%;
+  margin-top: 0;
+  margin-bottom: 15%;
 
   @include vp-1199 {
-    margin: 13px 0 18%;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 18%;
   }
 
   @include vp-767 {
-    margin: 13px 0 21%;
+    margin: 0 0 23%;
   }
 }
 
@@ -126,11 +129,16 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 23%;
+  padding: 10%;
   padding-left: 26px;
   padding-right: 26px;
+  padding-top: 21%;
   max-height: 100%;
   overflow: hidden;
+
+  @include vp-767 {
+    padding-top: 19%;
+  }
 }
 
 .coach__item:hover img {
@@ -146,16 +154,7 @@
 }
 
 .coach__item:hover h3 {
-  top: 18%;
-  bottom: auto;
-
-  @include vp-1199 {
-    top: 18%;
-  }
-
-  @include vp-767 {
-    top: 15%;
-  }
+  display: none;
 }
 
 .coach__description li {
@@ -165,9 +164,26 @@
   font-size: 14px;
   line-height: 1;
   color: $color-default-white;
-  margin-bottom: 24px;
+  margin-bottom: 15%;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include vp-1199 {
+    margin-bottom: 14%;
+  }
+
+  @include vp-767 {
+    margin-bottom: 16%;
+  }
+}
+
+.coach__item h4 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
 }
