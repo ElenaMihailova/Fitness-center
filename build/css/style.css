@@ -3151,10 +3151,6 @@ button,
   color: #ff1553;
 }
 
-input:hover .lesson__form fieldset::after {
-  background-color: aqua;
-}
-
 .lesson__form input::-webkit-input-placeholder {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -3490,6 +3486,12 @@ input:hover .lesson__form fieldset::after {
   text-align: center;
   margin: 0;
   cursor: pointer;
+}
+
+.tabs__item a:hover,
+.tabs__item a:focus,
+.tabs__item a:active {
+  color: rgb(16, 38, 84);
 }
 
 .tabs__item--active a {
