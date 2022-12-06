@@ -58,6 +58,7 @@
     font-weight: 700;
     margin-bottom: 15px;
     margin-right: 0;
+    max-width: fit-content;
   }
 
   @include vp-767 {
