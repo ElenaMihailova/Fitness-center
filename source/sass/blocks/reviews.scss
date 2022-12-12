@@ -16,15 +16,14 @@
   @include vp-767 {
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 71px;
+    padding-bottom: 65px;
     padding-top: 14px;
   }
 }
 
 .reviews__container {
-  width: 100%;
   margin-top: 37px;
-  max-width: 560px;
+  max-width: 44%;
 
   @include vp-1199 {
     margin-top: 40px;

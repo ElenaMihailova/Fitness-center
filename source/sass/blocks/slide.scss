@@ -30,12 +30,14 @@
   grid-column: 1/2;
   grid-row: 1/-1;
   margin-top: 6px;
+  margin-left: 0;
 
   @include vp-767 {
     margin-top: 0;
     grid-row: 1/2;
     width: 68px;
     justify-self: center;
+    margin-left: 18px;
   }
 }
 
