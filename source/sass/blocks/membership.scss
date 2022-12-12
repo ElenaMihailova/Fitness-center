@@ -63,10 +63,11 @@
 
 .membership__sublist {
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  gap: 10px;
+  gap: 3.5%;
   display: none;
+  row-gap: 20px;
 
   &--active {
     display: flex;

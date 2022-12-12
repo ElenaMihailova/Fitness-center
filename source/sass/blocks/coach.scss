@@ -80,6 +80,9 @@
   padding: 0;
   list-style: disc;
   padding-left: 45px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
   @include vp-1199 {
     padding-left: 44px;
@@ -88,6 +91,11 @@
   @include vp-767 {
     padding-left: 24px;
   }
+}
+
+.coach__description ul::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .coach__description li::marker {
@@ -154,6 +162,22 @@
 }
 
 .coach__item:hover h3 {
+  display: none;
+}
+
+.coach__item:focus img {
+  display: none;
+}
+
+.coach__item:focus {
+  background-color: $color-sapphire;
+}
+
+.coach__item:focus .coach__description {
+  display: flex;
+}
+
+.coach__item:focus h3 {
   display: none;
 }
 

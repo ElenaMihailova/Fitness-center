@@ -6,6 +6,7 @@
   @include vp-1199 {
     padding: 100px 45px;
     padding-top: 101px;
+    padding-bottom: 95px;
   }
 
   @include vp-767 {
@@ -22,14 +23,18 @@
   max-width: 1160px;
   margin: 0 auto;
   gap: 3%;
+  position: relative;
+  padding-bottom: 116px;
 
   @include vp-1199 {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 87px;
   }
 
   @include vp-767 {
     gap: 33px;
+    padding-bottom: 0;
   }
 }
 
@@ -65,16 +70,24 @@
 }
 
 .promo__video {
-  margin-top: -112px;
-  margin-left: 77px;
+  position: absolute;
+  left: 53.5%;
+  transform: translateX(-50%);
+  top: 287px;
 
   @include vp-1199 {
-    margin-left: 0;
-    margin-top: -84px;
+    top: auto;
+    bottom: 5px;
+    left: 50%;
+    margin-top: 0;
   }
 
   @include vp-767 {
-    margin-top: 8px;
+    position: relative;
+    transform: none;
+    left: 0;
+    right: 0;
+    margin-top: 7px;
   }
 }
 

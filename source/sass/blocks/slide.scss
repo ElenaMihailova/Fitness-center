@@ -20,7 +20,7 @@
   @include vp-767 {
     padding: 40px 25px;
     gap: 15px;
-    height: 335px;
+    min-height: 335px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -65,8 +65,6 @@
   color: $color-default-white;
   margin: 0;
   width: 85%;
-  height: 88px;
-  overflow: hidden;
 
   @include vp-767 {
     grid-column: 1/-1;

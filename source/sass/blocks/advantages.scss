@@ -45,13 +45,11 @@
 
   @include vp-1199 {
     flex: 0 0 46%;
-    max-height: 100px;
   }
 
   @include vp-767 {
     flex-direction: column;
     align-items: center;
-    max-height: none;
     overflow: auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -87,12 +85,12 @@
   gap: 20%;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 148px;
+  row-gap: 68px;
   padding-left: 0;
   position: relative;
 
   @include vp-1199 {
-    row-gap: 324px;
+    row-gap: 325px;
     column-gap: 38px;
     padding-top: 30px;
     padding-left: 11px;
@@ -172,7 +170,6 @@
 
 .advantages__text p {
   width: 95%;
-  overflow: hidden;
 
   @include vp-1199 {
     width: 94%;
@@ -217,7 +214,8 @@
     justify-self: center;
     padding: 45px;
     max-height: 239px;
-    top: 212px;
+    top: 58%;
+    transform: translateY(-50%);
     justify-content: flex-start;
     padding-top: 31px;
     -ms-overflow-style: none;
@@ -230,8 +228,8 @@
   @include vp-767 {
     width: 100%;
     padding: 50px;
-    top: 43%;
-    padding-top: 38px;
+    top: 53.9%;
+    padding-top: 39px;
   }
 }
 
@@ -316,26 +314,53 @@
 }
 
 .advantages__item:nth-child(2) {
+  position: relative;
+  padding-bottom: 80px;
+
+  @include vp-1199 {
+    padding-bottom: 0;
+    position: static;
+  }
+
   @include vp-767 {
     margin-bottom: 90%;
   }
 }
 
-.advantages__list::after,
-.advantages__list::before {
+.advantages__item:nth-child(1) {
+  position: relative;
+  padding-bottom: 80px;
+  padding-right: 15px;
+
+  @include vp-1199 {
+    padding-bottom: 0;
+    padding-right: 0;
+    position: static;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
+  }
+}
+
+.advantages__item:nth-child(1)::after,
+.advantages__item:nth-child(2)::after {
   content: "";
   height: 2px;
   width: 340px;
   background-color: rgba(209, 10, 66, 0.2);
   position: absolute;
-  top: 55%;
-  transform: translateY(-50%);
+  bottom: 0;
 
   @include vp-1199 {
     display: none;
   }
 }
 
-.advantages__list::after {
+.advantages__item:nth-child(1)::after {
+  left: 0;
+}
+
+.advantages__item:nth-child(2)::after {
   right: 0;
 }

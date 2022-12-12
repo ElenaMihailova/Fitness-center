@@ -3,8 +3,6 @@ const contactsSection = document.querySelector('.lesson');
 const contactsForm = contactsSection.querySelector('form');
 const inputPhoneContacts = contactsForm.querySelector('#phone');
 const inputNameContacts = contactsForm.querySelector('#name');
-const MIN_LENGTH_PHONE = 10;
-const MAX_LENGTH_PHONE = 10;
 const URL_SERVER = 'https://echo.htmlacademy.ru';
 
 const onInputValueMissing = (evt) => {
@@ -31,17 +29,9 @@ const setFormValidityOk = (evt) => {
 
 const validityForm = (phone, name) => {
   phone.addEventListener('input', (evt) => {
-    const lengthInputPhone = phone.value.length;
-
     if (!validityInputNumber.test(phone.value)) {
       onInputValueError(evt);
       phone.setCustomValidity('Номер телефона должен содержать только цифры');
-    } else if (lengthInputPhone < MIN_LENGTH_PHONE) {
-      onInputValueError(evt);
-      phone.setCustomValidity(`Еще нужно ввести минимум ${MIN_LENGTH_PHONE - lengthInputPhone} цифр`);
-    } else if (lengthInputPhone > MAX_LENGTH_PHONE) {
-      onInputValueError(evt);
-      phone.setCustomValidity(`Нужно удалить ${lengthInputPhone - MAX_LENGTH_PHONE} цифр`);
     } else {
       phone.setCustomValidity('');
       setFormValidityOk(evt);

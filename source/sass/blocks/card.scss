@@ -20,11 +20,12 @@
 
   @include vp-1199 {
     padding-top: 57px;
+    padding-bottom: 63px;
   }
 
   @include vp-767 {
     padding: 55px 10px;
-    padding-top: 43px;
+    padding-top: 42px;
     padding-bottom: 47px;
   }
 }
@@ -73,19 +74,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 58px;
-  }
-}
-
-.card__price span {
-  font-family: "Rouble", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 150%;
-  color: $color-sapphire;
-
-  @include vp-767 {
-    font-size: 40px;
+    margin-bottom: 59px;
   }
 }
 
@@ -97,22 +86,21 @@
   line-height: 1.5;
   color: $color-egyptianBlue;
   margin: 0;
-  margin-top: -32px;
   z-index: 2;
-  margin-left: 10px;
+  margin: -26px 0 0 3px;
 
   @include vp-1199 {
-    margin: -40px 0 0 15px;
+    margin: -35px 0 0 4px;
   }
 
   @include vp-767 {
     font-size: 48px;
-    margin: -28px 0 0 7px;
+    margin: -28px 0 0 4px;
   }
 }
 
 .card a {
-  padding: 27px 10px;
+  padding: 26px 10px;
   padding-bottom: 23px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -123,9 +111,9 @@
   text-transform: uppercase;
   color: $color-sapphire;
   border: 2px solid $color-sapphire;
-  width: 63%;
+  width: 64%;
   text-align: center;
-  margin-left: 0;
+  margin-left: 1px;
 
   &:hover {
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -176,11 +164,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 
   @include vp-767 {
     margin-left: 0;
     margin-bottom: 29px;
     max-width: 100%;
+  }
+}
+
+.card__price svg {
+  fill: #102654;
+
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
   }
 }

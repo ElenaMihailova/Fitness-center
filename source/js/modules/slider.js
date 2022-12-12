@@ -56,9 +56,9 @@ const sliderFeedback = () => {
       },
     },
   });
-  // swiperFeedback.on('slideChange', function () {
-  //   swiperFeedback.el.children[0].style.height = '';
-  // });
+  swiperFeedback.on('slideChange', function () {
+    swiperFeedback.el.children[0].style.height = '';
+  });
 };
 
 export {sliderCoaches, sliderFeedback};

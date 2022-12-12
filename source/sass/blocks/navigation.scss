@@ -1,9 +1,12 @@
 .navigation {
   padding-left: 19px;
+  padding-top: 0;
+  max-width: 60%;
 
   @include vp-1199 {
     padding-left: 8px;
     padding-bottom: 0;
+    padding-top: 0;
   }
 
   @include vp-767 {
