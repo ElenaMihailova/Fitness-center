@@ -2999,8 +2999,9 @@ button,
 }
 
 .reviews__container {
-  width: 560px;
+  width: 100%;
   margin-top: 37px;
+  max-width: 560px;
 }
 
 .reviews__title {
@@ -4256,7 +4257,6 @@ button,
 
   .reviews__container {
     margin-top: 40px;
-    width: 566px;
   }
 
   .reviews__title {
@@ -4959,7 +4959,7 @@ button,
   }
 
   .reviews__container {
-    width: 226px;
+    width: 77%;
     margin-top: 41px;
   }
 
@@ -4998,8 +4998,8 @@ button,
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     width: 68px;
-    -ms-grid-column-align: end;
-    justify-self: end;
+    -ms-grid-column-align: center;
+    justify-self: center;
   }
 
   .slide h3 {
