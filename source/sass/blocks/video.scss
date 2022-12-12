@@ -6,6 +6,10 @@
   @include vp-1199 {
     padding: 0;
   }
+  @include vp-767 {
+    display: block;
+    width: 100%;
+  }
 }
 
 .video__content {
@@ -56,8 +60,8 @@
   }
 
   @include vp-767 {
-    width: 320px;
-    height: 167px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -75,5 +79,5 @@
 
 .video__background {
   width: 100%;
-  height: auto;
+  object-fit: contain;
 }

@@ -22,16 +22,17 @@
 }
 
 .reviews__container {
-  width: 560px;
+  width: 100%;
   margin-top: 37px;
+  max-width: 560px;
 
   @include vp-1199 {
     margin-top: 40px;
-    width: 566px;
+    max-width: 85%;
   }
 
   @include vp-767 {
-    width: 226px;
+    width: 77%;
     margin-top: 41px;
   }
 }

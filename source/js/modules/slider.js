@@ -46,6 +46,7 @@ const sliderFeedback = () => {
     },
     breakpoints: {
       320: {
+        slidesPerView: 1,
         spaceBetween: 20,
       },
       768: {
@@ -56,9 +57,9 @@ const sliderFeedback = () => {
       },
     },
   });
-  swiperFeedback.on('slideChange', function () {
-    swiperFeedback.el.children[0].style.height = '';
-  });
+  // swiperFeedback.on('slideChange', function () {
+  //   swiperFeedback.el.children[0].style.height = '';
+  // });
 };
 
 export {sliderCoaches, sliderFeedback};
