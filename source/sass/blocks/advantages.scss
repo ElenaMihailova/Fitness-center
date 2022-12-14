@@ -28,7 +28,7 @@
 }
 
 .advantages__item:nth-child(even) {
-  padding-left: 57px;
+  padding-left: 0;
 
   @include vp-1199 {
     padding-left: 0;
@@ -80,7 +80,6 @@
   padding-top: 31px;
   margin: 0;
   list-style: none;
-  max-width: 1040px;
   display: flex;
   gap: 20%;
   flex-wrap: wrap;
@@ -88,6 +87,7 @@
   row-gap: 68px;
   padding-left: 0;
   position: relative;
+  max-width: 1040px;
 
   @include vp-1199 {
     row-gap: 325px;
@@ -95,6 +95,8 @@
     padding-top: 30px;
     padding-left: 11px;
     justify-content: flex-start;
+    max-width: 768px;
+    position: relative;
   }
 
   @include vp-767 {
@@ -102,6 +104,7 @@
     flex-direction: column;
     gap: 35px;
     padding-left: 0;
+    width: 100%;
   }
 }
 
@@ -195,7 +198,7 @@
   }
 }
 
-.advantages__item-major {
+.advantages__item--major {
   width: 240px;
   background-color: $color-resolutionBlue;
   display: flex;
@@ -206,18 +209,21 @@
   padding-top: 58px;
   padding-bottom: 66px;
   position: absolute;
-  top: 122px;
-  bottom: 6px;
+  top: 12.5%;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
 
   @include vp-1199 {
     width: 60%;
     justify-self: center;
-    padding: 45px;
-    max-height: 239px;
-    top: 58%;
-    transform: translateY(-50%);
+    padding: 31px 45px;
+    height: 239px;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     justify-content: flex-start;
-    padding-top: 31px;
     -ms-overflow-style: none;
     /* for Internet Explorer, Edge */
     scrollbar-width: none;
@@ -228,17 +234,25 @@
   @include vp-767 {
     width: 100%;
     padding: 50px;
-    top: 53.9%;
     padding-top: 39px;
+    padding-bottom: 43px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: static;
+    transform: none;
+    height: auto;
+    margin-top: 9px;
+    margin-bottom: 8px;
   }
 }
 
-.advantages__item-major::-webkit-scrollbar {
+.advantages__item--major::-webkit-scrollbar {
   display: none;
   /* for Chrome, Safari, and Opera */
 }
 
-.advantages__item-major p {
+.advantages__item--major p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -267,7 +281,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 }
 
@@ -282,11 +296,11 @@
 
   @include vp-1199 {
     margin-bottom: 0;
-    margin-right: 0;
+    margin-right: 4px;
   }
 
   @include vp-767 {
-    margin-right: 4px;
+    margin-right: 14px;
   }
 }
 
@@ -307,23 +321,38 @@
   }
 }
 
-.advantages__item:nth-child(even) .advantages__number {
+.advantages__item:nth-child(2) .advantages__number {
   @include vp-1199 {
     margin-left: 0;
+  }
+}
+
+.advantages__item:nth-child(5) .advantages__number {
+  @include vp-1199 {
+    margin-left: 0;
+  }
+}
+
+.advantages__item:nth-child(5) {
+  padding-left: 57px;
+
+  @include vp-1199 {
+    padding-left: 0;
+  }
+
+  @include vp-767 {
+    padding-right: 0;
   }
 }
 
 .advantages__item:nth-child(2) {
   position: relative;
   padding-bottom: 80px;
+  padding-left: 57px;
 
   @include vp-1199 {
     padding-bottom: 0;
     position: static;
-  }
-
-  @include vp-767 {
-    margin-bottom: 90%;
   }
 }
 
