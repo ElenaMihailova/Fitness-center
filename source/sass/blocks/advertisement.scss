@@ -34,7 +34,7 @@
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(3, auto);
   max-width: 43%;
-  align-items: flex-start;
+  // align-items: flex-start;
 
   @include vp-1199 {
     grid-template-rows: auto auto auto;

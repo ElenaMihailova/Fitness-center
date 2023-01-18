@@ -393,3 +393,17 @@
 .advantages__item:nth-child(2)::after {
   right: 0;
 }
+
+//animation
+
+.advantages__item--second {
+  transition-delay: 0.3s;
+}
+
+.advantages__item--third {
+  transition-delay: 0.5s;
+}
+
+.advantages__item--fourth {
+  transition-delay: 0.7s;
+}

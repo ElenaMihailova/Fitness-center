@@ -1903,7 +1903,7 @@ button,
 
 .promo__video {
   position: absolute;
-  left: 53.5%;
+  left: 35%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -2224,6 +2224,18 @@ button,
   fill: #102654;
 }
 
+.card__second {
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.card__third {
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
 .advertisement {
   padding-top: 120px;
   padding-bottom: 77px;
@@ -2253,9 +2265,6 @@ button,
   -ms-grid-rows: (auto)[3];
   grid-template-rows: repeat(3, auto);
   max-width: 43%;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
 }
 
 .advertisement__title {
@@ -2798,6 +2807,24 @@ button,
 
 .advantages__item:nth-child(2)::after {
   right: 0;
+}
+
+.advantages__item--second {
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.advantages__item--third {
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.advantages__item--fourth {
+  -webkit-transition-delay: 0.7s;
+  -o-transition-delay: 0.7s;
+  transition-delay: 0.7s;
 }
 
 .title {
@@ -3844,7 +3871,7 @@ button,
   .promo__video {
     top: auto;
     bottom: 5px;
-    left: 50%;
+    left: 37%;
     margin-top: 0;
   }
 
@@ -4575,6 +4602,8 @@ button,
   .about__description {
     padding-left: 0;
     width: 100%;
+    -webkit-animation-name: none;
+    animation-name: none;
   }
 
   .about__list {

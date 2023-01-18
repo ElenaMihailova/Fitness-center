@@ -71,14 +71,14 @@
 
 .promo__video {
   position: absolute;
-  left: 53.5%;
+  left: 35%;
   transform: translateX(-50%);
   top: 287px;
 
   @include vp-1199 {
     top: auto;
     bottom: 5px;
-    left: 50%;
+    left: 37%;
     margin-top: 0;
   }
 

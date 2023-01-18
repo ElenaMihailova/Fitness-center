@@ -4,6 +4,7 @@ import {sliderCoaches, sliderFeedback} from './modules/slider';
 import {video} from './modules/video/video';
 import {tabs} from './modules/tabs/tabs';
 import {validityForm, sendUserFormData, contactsForm, inputPhoneContacts, inputNameContacts} from './modules/validate/validate';
+import AOS from 'aos';
 
 
 // ---------------------------------
@@ -28,8 +29,13 @@ window.addEventListener('DOMContentLoaded', () => {
     tabs();
     validityForm(inputPhoneContacts, inputNameContacts);
     sendUserFormData(contactsForm);
+
+    AOS.init({
+      duration: 1200,
+    });
   });
 });
+
 
 // ---------------------------------
 
