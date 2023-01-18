@@ -166,6 +166,8 @@
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  transition-property: background-color color;
+  transition-duration: 1s;
 
   &:hover,
   &:focus {

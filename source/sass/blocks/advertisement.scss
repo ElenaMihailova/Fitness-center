@@ -120,6 +120,11 @@
   padding-top: 24px;
   padding-bottom: 23px;
   margin-top: 26px;
+  transition-property: background-color;
+  transition-duration: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover,
   &:focus {

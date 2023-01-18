@@ -114,6 +114,8 @@
   width: 64%;
   text-align: center;
   margin-left: 1px;
+  transition-property: color;
+  transition-duration: 1s;
 
   &:hover {
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);

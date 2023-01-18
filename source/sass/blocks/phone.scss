@@ -6,6 +6,9 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: $color-default-white;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 
   @include vp-1199 {
     font-size: 24px;

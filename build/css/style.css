@@ -1709,6 +1709,15 @@ button,
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #ffffff;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
 }
 
 .phone__link:hover,
@@ -1835,6 +1844,12 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
+  -webkit-transition-property: background-color, color;
+  -o-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .about__button:hover,
@@ -2173,6 +2188,12 @@ button,
   width: 64%;
   text-align: center;
   margin-left: 1px;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .card a:hover {
@@ -2311,6 +2332,21 @@ button,
   padding-top: 24px;
   padding-bottom: 23px;
   margin-top: 26px;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .advertisement__link:hover,
@@ -2500,7 +2536,10 @@ button,
 }
 
 .coach__description {
-  display: none;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2518,6 +2557,19 @@ button,
   padding-top: 21%;
   max-height: 100%;
   overflow: hidden;
+  position: absolute;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 4s;
+  -o-transition-duration: 4s;
+  transition-duration: 4s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .coach__item:hover img {
@@ -2529,9 +2581,7 @@ button,
 }
 
 .coach__item:hover .coach__description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
 }
 
 .coach__item:hover h3 {
@@ -3321,6 +3371,12 @@ button,
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  -webkit-transition-property: background-color color;
+  -o-transition-property: background-color color;
+  transition-property: background-color color;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .lesson__form button:hover,
